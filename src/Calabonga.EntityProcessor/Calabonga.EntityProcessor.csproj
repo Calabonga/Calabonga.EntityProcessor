@@ -28,7 +28,6 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Calabonga/EntityProcessor</RepositoryUrl>
 		<IncludeSymbols>False</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
