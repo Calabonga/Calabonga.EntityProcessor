@@ -15,11 +15,11 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Install dependencies
-        run: dotnet restore src/Calabonga.AspNetCore.AppDefinitions.sln
+        run: dotnet restore src/Calabonga.EntityProcessor.sln
       - name: Build
-        run: dotnet build src/Calabonga.AspNetCore.AppDefinitions.sln --configuration Release --no-restore
-      - name: Publish Calabonga.AspNetCore.AppDefinitions
+        run: dotnet build src/Calabonga.EntityProcessor.sln --configuration Release --no-restore
+      - name: Publish Calabonga.EntityProcessor
         uses: brandedoutcast/publish-nuget@v2.5.2
         with:
-          PROJECT_FILE_PATH: src/Calabonga.AspNetCore.AppDefinitions/Calabonga.AspNetCore.AppDefinitions.csproj
+          PROJECT_FILE_PATH: src/Calabonga.EntityProcessor/Calabonga.EntityProcessor.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
