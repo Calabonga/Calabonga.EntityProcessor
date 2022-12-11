@@ -86,7 +86,6 @@ logger.LogInformation("App {Name} started", appSettings.Value.ApplicationName);
 
 await controller.CreateOrderAsync();
 
-
 // Order 1
 var order = new Order
 {
@@ -100,3 +99,5 @@ var order = new Order
 };
 
 await controller.UpdateOrderAsync(order);
+
+logger.LogInformation("App {Name} successfully exit", appSettings.Value.ApplicationName);
