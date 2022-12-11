@@ -1,4 +1,4 @@
-using Calabonga.EntityProcessor.Base;
+﻿using Calabonga.EntityProcessor.Results;
 
 namespace Calabonga.EntityProcessor.Actions;
 

@@ -1,6 +1,6 @@
-﻿namespace Calabonga.EntityProcessor.Base;
+﻿namespace Calabonga.EntityProcessor.Results;
 
 public abstract class ResultBase : DomainEventCollectionBase
 {
-    
+
 }

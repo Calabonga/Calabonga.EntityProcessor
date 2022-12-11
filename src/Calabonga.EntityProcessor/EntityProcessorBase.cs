@@ -1,5 +1,4 @@
 ﻿using Calabonga.EntityProcessor.Actions;
-using Calabonga.EntityProcessor.Base;
 using Calabonga.EntityProcessor.Events;
 using Calabonga.EntityProcessor.Exceptions;
 using Calabonga.EntityProcessor.Results;
@@ -10,8 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Calabonga.EntityProcessor;
 
-public abstract class EntityProcessorBase<TEntity>
-    where TEntity : class
+public abstract class EntityProcessorBase<TEntity> where TEntity : class
 {
     private readonly EntityProcessorContext _context = new();
     private readonly EntityProcessorConfiguration _configuration;
@@ -31,7 +29,7 @@ public abstract class EntityProcessorBase<TEntity>
         _rules = rules;
     }
 
-    public async Task<ExecutionResultBase<TEntity>> ProcessAsync(TEntity entity, IAction<TEntity> actionToExecute, IEnumerable<IRule<TEntity>>? rules = null)
+    public async Task<ExecutionResultBase<TEntity>> ProcessAsync(TEntity entity, IAction<TEntity> actionToExecute, IEnumerable<IRule<TEntity>>? rules = null, CancellationToken cancellationToken = default)
     {
         _logger.LogDebug("[{EntityProcessor}]: Executing {Method}", GetType().Name, nameof(ProcessAsync));
 
@@ -57,7 +55,7 @@ public abstract class EntityProcessorBase<TEntity>
             foreach (var rule in allRules!)
             {
                 _logger.LogDebug("[{EntityProcessor}]: Validating {Entity} with rule {RuleName}", GetType().Name, entity.GetType().Name, rule.GetType().Name);
-                var check = await rule.ValidateAsync(entity, _context);
+                var check = await rule.ValidateAsync(entity, _context, cancellationToken);
                 if (check.Ok)
                 {
                     continue;
@@ -75,19 +73,19 @@ public abstract class EntityProcessorBase<TEntity>
             return new ExecutionErrorResult<TEntity>(entity, errors);
         }
 
-        var result = await actionToExecute.ApplyAsync(entity, _context);
+        var result = await actionToExecute.ApplyAsync(entity, _context, cancellationToken);
 
         if (_configuration.AutoFireDomainEvents)
         {
             _logger.LogDebug("[{EntityProcessor}]: Firing DomainEvents", GetType().Name);
-            await FireDomainEventsAsync(result.DomainEvents);
+            await FireDomainEventsAsync(result.DomainEvents, cancellationToken);
         }
 
         _logger.LogDebug("[{EntityProcessor}]: Executed {Method}", GetType().Name, nameof(ProcessAsync));
         return new ExecutionSuccessResult<TEntity>(entity, result);
     }
 
-    private async Task FireDomainEventsAsync(IEnumerable<IDomainEvent> domainEvents)
+    private async Task FireDomainEventsAsync(IEnumerable<IDomainEvent> domainEvents, CancellationToken cancellationToken)
     {
         foreach (var domainEvent in domainEvents)
         {
@@ -95,11 +93,11 @@ public abstract class EntityProcessorBase<TEntity>
             {
                 case IDomainCommand:
                     _logger.LogDebug("[Command fired]: {Name}", domainEvent.GetType().Name);
-                    await _mediator.Send(domainEvent);
+                    await _mediator.Send(domainEvent, cancellationToken);
                     break;
                 case IDomainNotification:
                     _logger.LogDebug("[Notification fired]: {Name}", domainEvent.GetType().Name);
-                    await _mediator.Publish(domainEvent);
+                    await _mediator.Publish(domainEvent, cancellationToken);
                     break;
             }
         }

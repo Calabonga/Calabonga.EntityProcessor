@@ -4,6 +4,7 @@ using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Actions;
 using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Rules;
 using Calabonga.ConsoleAppAdvanced.Services;
 using Calabonga.EntityProcessor;
+using Calabonga.EntityProcessor.Actions;
 using Calabonga.EntityProcessor.Extensions;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
@@ -66,9 +67,15 @@ services.AddScoped<IRule<Order>, CheckCreatedDateExistsOrderRule>();
 services.AddScoped<IRule<Order>, CheckCreatedInThePastOrderRule>();
 services.AddScoped<IRule<Order>, CheckPriceOrderRule>();
 
-
 // adding commands and notifications
+
 services.AddScoped<ChangeStateToPublishedAction>();
+services.AddScoped<CreateAction>();
+
+#region another way to inject actions
+services.AddScoped<IAction<Order>, ChangeStateToPublishedAction>();
+services.AddScoped<IAction<Order>, CreateAction>();
+#endregion
 
 var container = services.BuildServiceProvider();
 

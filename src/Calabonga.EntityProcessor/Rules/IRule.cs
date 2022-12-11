@@ -1,10 +1,14 @@
-﻿namespace Calabonga.EntityProcessor.Rules;
+﻿using Calabonga.EntityProcessor.Actions;
 
-public interface IRule<in TEntity> where TEntity: class
+namespace Calabonga.EntityProcessor.Rules;
+
+public interface IRule<in TEntity> : IHaveName where TEntity : class
 {
-    Task<IRuleResult> ValidateAsync(TEntity entity, EntityProcessorContext context);
+    Task<IRuleResult> ValidateAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
 
     string? ErrorMessage { get; }
-    
+
     string? SuccessMessage { get; }
+
+    string GroupName { get; }
 }

@@ -1,7 +1,7 @@
-using Calabonga.EntityProcessor.Actions;
+﻿using Calabonga.EntityProcessor.Actions;
 using System.ComponentModel.DataAnnotations;
 
-namespace Calabonga.EntityProcessor.Base;
+namespace Calabonga.EntityProcessor.Results;
 
 public abstract class ExecutionResultBase<TEntity>
 {
@@ -16,10 +16,10 @@ public abstract class ExecutionResultBase<TEntity>
     public IEnumerable<ValidationResult>? Validations { get; private set; }
 
     public bool Ok => Result is not null && Entity is not null;
-    
+
     public TEntity? Entity { get; }
 
 
-    protected void SetValidationResults(IEnumerable<ValidationResult> validationResults) 
+    protected void SetValidationResults(IEnumerable<ValidationResult> validationResults)
         => Validations = validationResults;
 }

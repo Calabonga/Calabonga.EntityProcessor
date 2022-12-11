@@ -1,7 +1,6 @@
 ﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 using Calabonga.EntityProcessor;
 using Calabonga.EntityProcessor.Actions;
-using Calabonga.EntityProcessor.Base;
 using Calabonga.Shared.OrderEntity;
 using Microsoft.Extensions.Logging;
 
@@ -13,7 +12,7 @@ public class CreateAction : ActionBase<Order>
 
     public CreateAction(ILogger<CreateAction> logger) => _logger = logger;
 
-    public override Task<EntityActionResult> ApplyAsync(Order entity, EntityProcessorContext context)
+    public override Task<EntityActionResult> ApplyAsync(Order entity, EntityProcessorContext context, CancellationToken cancellationToken)
     {
         _logger.LogInformation("Saving {Name} to database", nameof(Order));
 

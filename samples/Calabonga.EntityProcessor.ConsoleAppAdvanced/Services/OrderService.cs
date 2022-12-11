@@ -10,19 +10,23 @@ public class OrderService : IOrderService
 {
     private readonly OrderEntityProcessor _orderProcessor;
     private readonly ChangeStateToPublishedAction _changeStateToPublishedAction;
+    private readonly CreateAction _createAction;
 
     public OrderService(
+
         OrderEntityProcessor orderProcessor,
-        ChangeStateToPublishedAction changeStateToPublishedAction)
+        ChangeStateToPublishedAction changeStateToPublishedAction,
+        CreateAction createAction)
     {
         _orderProcessor = orderProcessor;
         _changeStateToPublishedAction = changeStateToPublishedAction;
+        _createAction = createAction;
     }
 
     public async Task<OperationResult<Order>> CreateAsync(OrderState state, Order order)
     {
         var operationResult = OperationResult.CreateResult<Order>();
-        var executionResult = await _orderProcessor.ProcessAsync(order, _changeStateToPublishedAction);
+        var executionResult = await _orderProcessor.ProcessAsync(order, _createAction);
         if (executionResult.Ok)
         {
             operationResult.Result = executionResult.Entity!;

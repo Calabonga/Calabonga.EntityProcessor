@@ -1,5 +1,5 @@
 ﻿using Calabonga.EntityProcessor;
-using Calabonga.EntityProcessor.Base;
+using Calabonga.EntityProcessor.Results;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 using Microsoft.Extensions.Logging;
@@ -13,7 +13,7 @@ public class CheckPriceOrderRule : RuleBase<Order>
     public CheckPriceOrderRule(ILogger<CheckPriceOrderRule> logger)
         => _logger = logger;
 
-    public override async Task<IRuleResult> ValidateAsync(Order entity, EntityProcessorContext context)
+    public override async Task<IRuleResult> ValidateAsync(Order entity, EntityProcessorContext context, CancellationToken cancellationToken)
     {
         await Task.Delay(320);
 
@@ -23,4 +23,10 @@ public class CheckPriceOrderRule : RuleBase<Order>
             ? new ErrorRuleResult("Price")
             : new SuccessRuleResult();
     }
+
+    public override string ErrorMessage => "Цена в заказе не должна быть меньше или равно 0";
+
+    public override string SuccessMessage => "Проверка цены успешно завершена";
+
+    public override string GroupName => "Updating";
 }
