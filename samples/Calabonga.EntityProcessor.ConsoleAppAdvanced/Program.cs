@@ -1,7 +1,7 @@
 ﻿using Calabonga.ConsoleAppAdvanced;
-using Calabonga.ConsoleAppAdvanced.OrderEntity.Actions;
-using Calabonga.ConsoleAppAdvanced.OrderEntity.Rules;
-using Calabonga.ConsoleAppAdvanced.Processors;
+using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors;
+using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Actions;
+using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Rules;
 using Calabonga.ConsoleAppAdvanced.Services;
 using Calabonga.EntityProcessor;
 using Calabonga.EntityProcessor.Extensions;

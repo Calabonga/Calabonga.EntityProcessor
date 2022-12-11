@@ -4,7 +4,7 @@ using Calabonga.Shared.OrderEntity;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Calabonga.ConsoleAppAdvanced.Processors;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors;
 
 public class OrderEntityProcessor : EntityProcessorBase<Order>
 {

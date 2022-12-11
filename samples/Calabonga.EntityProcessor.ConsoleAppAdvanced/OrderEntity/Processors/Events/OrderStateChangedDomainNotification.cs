@@ -4,7 +4,7 @@ using Calabonga.Shared.Services;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Events;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 
 public record OrderStateChangedDomainNotification(OrderState State) : IDomainNotification;
 

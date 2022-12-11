@@ -1,5 +1,5 @@
-﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Actions;
-using Calabonga.ConsoleAppAdvanced.Processors;
+﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors;
+using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Actions;
 using Calabonga.OperationResults;
 using Calabonga.Shared.OrderEntity;
 using Calabonga.Shared.Services;

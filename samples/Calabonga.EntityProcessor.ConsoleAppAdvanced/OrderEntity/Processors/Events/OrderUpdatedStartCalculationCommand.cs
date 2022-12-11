@@ -3,7 +3,7 @@ using Calabonga.Shared.OrderEntity;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Events;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 
 public record OrderUpdatedStartCalculationCommand(Order Order) : IDomainCommand;
 

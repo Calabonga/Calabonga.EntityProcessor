@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Events;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 
 public record OrderCreatedDomainNotification(Order Order) : IDomainNotification;
 

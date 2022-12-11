@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Events;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 
 public record OrderTitleVerifiedNotification(int OrderId, bool IsValid) : IDomainNotification;
 
@@ -14,8 +14,8 @@ public class OrderTitleVerifiedNotificationHandler : INotificationHandler<OrderT
 
     public async Task Handle(OrderTitleVerifiedNotification notification, CancellationToken cancellationToken)
     {
-            _logger.LogInformation("[Notification handled]: {Name}", notification.GetType().Name);
-            await Task.Delay(400, cancellationToken);
-            // send notification to editor?
+        _logger.LogInformation("[Notification handled]: {Name}", notification.GetType().Name);
+        await Task.Delay(400, cancellationToken);
+        // send notification to editor?
     }
 }

@@ -1,11 +1,11 @@
-﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Events;
+﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 using Calabonga.EntityProcessor;
 using Calabonga.EntityProcessor.Actions;
 using Calabonga.EntityProcessor.Base;
 using Calabonga.Shared.OrderEntity;
 using Microsoft.Extensions.Logging;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Actions;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Actions;
 
 public class CreateAction : ActionBase<Order>
 {

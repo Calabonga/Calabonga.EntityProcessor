@@ -3,20 +3,20 @@ using Calabonga.EntityProcessor.Base;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Rules;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Rules;
 
 public class CheckCreatedInThePastOrderRule : RuleBase<Order>
 {
     public CheckCreatedInThePastOrderRule()
     {
-        
+
     }
     public override async Task<IRuleResult> ValidateAsync(Order entity, EntityProcessorContext context)
     {
         var isValid = entity.CreatedAt.Date <= DateTime.UtcNow.Date;
         await Task.Delay(900);
-        
-        
+
+
         return isValid ? new SuccessRuleResult() : new ErrorRuleResult(ErrorMessage!);
     }
 

@@ -3,7 +3,7 @@ using Calabonga.EntityProcessor.Base;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 
-namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Rules;
+namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Rules;
 
 public class CheckCreatedDateExistsOrderRule : RuleBase<Order>
 {
