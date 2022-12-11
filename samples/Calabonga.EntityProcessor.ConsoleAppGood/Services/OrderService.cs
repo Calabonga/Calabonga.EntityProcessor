@@ -6,7 +6,7 @@ namespace Calabonga.ConsoleApp.Services;
 
 public class OrderService : IOrderService
 {
-    public async Task<OperationResult<Order>> CreateAsync(OrderState state, Order order)
+    public async Task<OperationResult<Order>> CreateAsync(Order order)
     {
         var operationResult = OperationResult.CreateResult<Order>();
 
@@ -45,8 +45,6 @@ public class OrderService : IOrderService
             operationResult.AddError(exception);
             return operationResult;
         }
-
-        order.State = state;
 
         // SaveChangesAsync
         await Task.Delay(1000);

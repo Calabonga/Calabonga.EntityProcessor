@@ -23,9 +23,11 @@ public class OrderService : IOrderService
         _createAction = createAction;
     }
 
-    public async Task<OperationResult<Order>> CreateAsync(OrderState state, Order order)
+    public async Task<OperationResult<Order>> CreateAsync(Order order)
     {
         var operationResult = OperationResult.CreateResult<Order>();
+
+        //var executionResult = await _orderProcessor.CreateOrderAsync(order);
         var executionResult = await _orderProcessor.ProcessAsync(order, _createAction);
         if (executionResult.Ok)
         {

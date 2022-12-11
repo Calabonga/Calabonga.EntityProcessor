@@ -1,5 +1,5 @@
 ﻿using Calabonga.EntityProcessor;
-using Calabonga.EntityProcessor.Base;
+using Calabonga.EntityProcessor.Results;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 
@@ -7,16 +7,12 @@ namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Rules;
 
 public class CheckCreatedDateExistsOrderRule : RuleBase<Order>
 {
-    private RuleBase<Order> _ruleBaseImplementation;
-
     public override async Task<IRuleResult> ValidateAsync(Order entity, EntityProcessorContext context, CancellationToken cancellationToken)
     {
         var isValid = entity.CreatedAt.Date != default;
-        await Task.Delay(1100);
+        await Task.Delay(1100, cancellationToken);
         return isValid ? new SuccessRuleResult() : new ErrorRuleResult(ErrorMessage!);
     }
-
-
 
     public override string ErrorMessage => "Дата создания документа не задана";
 

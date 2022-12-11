@@ -5,7 +5,7 @@ namespace Calabonga.Shared.Services;
 
 public interface IOrderService
 {
-    Task<OperationResult<Order>> CreateAsync(OrderState state, Order order);
+    Task<OperationResult<Order>> CreateAsync(Order order);
 
     Task<OperationResult<Order>> UpdateStateAsync(OrderState state, Order order);
 }

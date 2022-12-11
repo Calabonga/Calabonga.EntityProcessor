@@ -1,4 +1,5 @@
 ﻿using Calabonga.EntityProcessor;
+using Calabonga.EntityProcessor.Results;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 using Microsoft.Extensions.Logging;

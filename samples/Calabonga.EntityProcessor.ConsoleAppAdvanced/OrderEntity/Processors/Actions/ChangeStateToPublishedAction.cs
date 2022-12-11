@@ -1,5 +1,8 @@
 ﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
+using Calabonga.EntityProcessor;
+using Calabonga.EntityProcessor.Actions;
 using Calabonga.Shared.OrderEntity;
+using Microsoft.Extensions.Logging;
 
 namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Actions;
 
