@@ -1,6 +1,6 @@
 # Демонстрация Calabonga.EntityProcessor
 
-Для того, чтобы показать как использовать `EntityProcessor` задумана простая логика. 
+Для того, чтобы показать как использовать `EntityProcessor` задумана простая логика.
 
 ## Создание Order
 
@@ -11,7 +11,7 @@
 Следующий шаг, обновление статуса сущности `Order`. При проверки определенных свойств у сущности, также "сохраняем" обновления в базу данных.
 
 # События домена (Domain Events)
-В процессе проверок, требуется запустить соответствующие события (`Domain Event`). В случае `Calabonga.EntityProcessor.ConsoleAppAdvanced` регистрируем их в выходных данных, а дальше запускаем эти события через Mediatr.
+В процессе проверок, требуется запустить соответствующие события (`Domain Event`). В случае `Calabonga.EntityProcessor.ConsoleAppAdvanced` регистрируем их в выходных данных, а дальше запускаем эти события через [Mediatr](https://github.com/jbogard/MediatR).
 
 
 # Calabonga.EntityProcessor.ConsoleAppGood
