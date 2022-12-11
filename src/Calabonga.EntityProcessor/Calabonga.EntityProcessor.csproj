@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+        <AssemblyName>Calabonga.EntityProcessor</AssemblyName>
+        <RootNamespace>Calabonga.EntityProcessor</RootNamespace>
+		<Version>1.0.0-beta1</Version>
+        <ApplicationIcon>favicon.ico</ApplicationIcon>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>Calabonga</Authors>
+		<Company>Calabonga SOFT</Company>
+		<Copyright>Calabonga 2023</Copyright>
+	    <Description>Entity processing with domain event collection. Rules, Actions, Validators, some helpers and other things for Domain-Driven Design pattern implementation.</Description>
+		<PackageProjectUrl>https://www.calabonga.net/blog/post/entity-processor</PackageProjectUrl>
+		<PackageTags>calabonga entity processor action rules validation mediatr domain events pattern</PackageTags>
+		<PackageReleaseNotes>First release (beta1)</PackageReleaseNotes>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Calabonga.EntityProcessor</PackageId>
+		<Product>Calabonga.EntityProcessor</Product>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIconUrl>https://www.calabonga.net/images/logo.png</PackageIconUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/Calabonga/EntityProcessor</RepositoryUrl>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="favicon.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\..\..\..\..\Users\calab\Pictures\CalabongaSoft\logo.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\..\readme.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="11.1.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+        <HintPath>..\..\..\..\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

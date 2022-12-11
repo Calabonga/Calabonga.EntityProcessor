@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2E4D293-20D8-407F-9E04-786952DD6FB1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		..\.github\FUNDING.yml = ..\.github\FUNDING.yml
+		..\.github\workflows\main.yml = ..\.github\workflows\main.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calabonga.EntityProcessor", "Calabonga.EntityProcessor\Calabonga.EntityProcessor.csproj", "{62C6121F-26F3-48A5-816B-A16659B7A3EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C6121F-26F3-48A5-816B-A16659B7A3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C6121F-26F3-48A5-816B-A16659B7A3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C6121F-26F3-48A5-816B-A16659B7A3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C6121F-26F3-48A5-816B-A16659B7A3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58A6374A-3306-4A14-A195-2EF03D9C403E}
+	EndGlobalSection
+EndGlobal
