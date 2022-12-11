@@ -12,6 +12,8 @@ public class ChangeStateToPublishedAction : ActionBase<Order>
 
     public ChangeStateToPublishedAction(ILogger<ChangeStateToPublishedAction> logger) => _logger = logger;
 
+    public override string? Name => "UpdateState";
+
     public override Task<EntityActionResult> ApplyAsync(Order entity, EntityProcessorContext context, CancellationToken cancellationToken)
     {
         _logger.LogInformation("Changing state from {OldState} to Published for {Name}, {ID}", entity.State, nameof(Order), entity.Id);

@@ -27,8 +27,8 @@ public class OrderService : IOrderService
     {
         var operationResult = OperationResult.CreateResult<Order>();
 
-        //var executionResult = await _orderProcessor.CreateOrderAsync(order);
-        var executionResult = await _orderProcessor.ProcessAsync(order, _createAction);
+        var executionResult = await _orderProcessor.CreateOrderAsync(order);
+        //var executionResult = await _orderProcessor.ProcessAsync(order, _createAction);
         if (executionResult.Ok)
         {
             operationResult.Result = executionResult.Entity!;

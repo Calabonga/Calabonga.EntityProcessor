@@ -12,6 +12,8 @@ public class CreateAction : ActionBase<Order>
 
     public CreateAction(ILogger<CreateAction> logger) => _logger = logger;
 
+    public override string? Name => "Create";
+
     public override Task<EntityActionResult> ApplyAsync(Order entity, EntityProcessorContext context, CancellationToken cancellationToken)
     {
         _logger.LogInformation("Saving {Name} to database", nameof(Order));

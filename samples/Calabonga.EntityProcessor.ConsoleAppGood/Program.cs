@@ -26,6 +26,9 @@ services.Configure<AppSettings>(x => { configuration.GetSection(nameof(AppSettin
 
 #region registering dependency and build container
 
+// controllers
+services.AddScoped<ControllerEmulator>();
+
 // services
 services.AddScoped<IOrderService, OrderService>();
 services.AddScoped<IStatisticService, StatisticService>();
@@ -36,6 +39,8 @@ var container = services.BuildServiceProvider();
 #endregion
 
 #region getting dependencies like in the controller constructor
+
+
 
 var controller = container.GetRequiredService<ControllerEmulator>();
 var logger = container.GetRequiredService<ILogger<Program>>();

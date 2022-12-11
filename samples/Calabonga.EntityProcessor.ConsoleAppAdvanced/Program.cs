@@ -52,11 +52,11 @@ services.AddEntityProcessor<OrderEntityProcessor>(
 
 #region anotner way to configure
 
-// services.AddEntityProcessor<OrderEntityProcessor>(config =>
-// {
-// config.SkipRuleDuplicates = true;
-// config.AutoFireDomainEvents = true;
-// });
+//services.AddEntityProcessor<OrderEntityProcessor>(config =>
+//{
+//    config.SkipRuleDuplicates = true;
+//    config.AutoFireDomainEvents = true;
+//});
 
 #endregion
 
