@@ -32,7 +32,7 @@ namespace Calabonga.ConsoleApp
                 IsEnabled = false
             };
 
-            var executionResult = await _orderService.UpdateStateAsync(OrderState.WaitingPayment, order);
+            var executionResult = await _orderService.CreateAsync(order);
             if (!executionResult.Ok)
             {
                 var message = executionResult.GetMetadataMessages();
