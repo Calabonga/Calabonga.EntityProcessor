@@ -1,6 +1,5 @@
 ﻿using Calabonga.ConsoleAppAdvanced.OrderEntity.Processors.Events;
 using Calabonga.EntityProcessor;
-using Calabonga.EntityProcessor.Results;
 using Calabonga.EntityProcessor.Rules;
 using Calabonga.Shared.OrderEntity;
 
