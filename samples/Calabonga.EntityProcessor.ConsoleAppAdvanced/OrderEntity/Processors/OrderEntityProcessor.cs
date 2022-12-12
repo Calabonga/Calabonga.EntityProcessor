@@ -9,14 +9,14 @@ using Microsoft.Extensions.Logging;
 
 namespace Calabonga.ConsoleAppAdvanced.OrderEntity.Processors;
 
-public class OrderEntityProcessor : EntityProcessorBase<Order>
+public class OrderEntityProcessor : EntityProcessor<Order>
 {
     private readonly IEnumerable<IAction<Order>> _actions;
 
     public OrderEntityProcessor(
         IEnumerable<IAction<Order>> actions,
         IMediator mediator,
-        EntityProcessorConfiguration? configuration,
+        OrderEntityProcessorConfiguration? configuration,
         ILogger<OrderEntityProcessor> logger,
         IEnumerable<IRule<Order>> rules) : base(mediator,
         configuration,

@@ -19,6 +19,7 @@ public partial class OrderCreatedDomainNotificationHandler : INotificationHandle
 
     public async Task Handle(OrderCreatedDomainNotification notification, CancellationToken cancellationToken)
     {
+        await Task.Delay(1000, cancellationToken);
         _logger.LogInformation("[Notification handled]: {Name}", notification.GetType().Name);
         _logger.LogInformation("[ORDER_CREATED]: {Name}", JsonSerializer.Serialize(notification.Order, new JsonSerializerOptions
         {

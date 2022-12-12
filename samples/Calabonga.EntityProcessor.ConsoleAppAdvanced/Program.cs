@@ -45,21 +45,22 @@ services.AddScoped<INotificationService, NotificationService>();
 services.AddMediatR(typeof(Program));
 
 // processors
-services.AddEntityProcessor<OrderEntityProcessor>(
-    configuration
-        .GetSection($"{nameof(EntityProcessorConfiguration)}:Orders")
-        .Get<EntityProcessorConfiguration>());
 
-#region anotner way to configure
+var loaded = configuration
+    .GetSection($"{nameof(EntityProcessorConfiguration<Order>)}:Orders")
+    .Get<OrderEntityProcessorConfiguration>();
 
-//services.AddEntityProcessor<OrderEntityProcessor>(config =>
-//{
-//    config.SkipRuleDuplicates = true;
-//    config.AutoFireDomainEvents = true;
-//});
+services.AddEntityProcessor<OrderEntityProcessor, OrderEntityProcessorConfiguration>(config =>
+{
+    if (loaded is null)
+    {
+        return;
+    }
 
-#endregion
-
+    config.IsProcessingEnabled = loaded.IsProcessingEnabled;
+    config.AutoFireDomainEvents = loaded.AutoFireDomainEvents;
+    config.SkipRuleDuplicates = loaded.SkipRuleDuplicates;
+});
 
 // adding rules
 services.AddScoped<IRule<Order>, CheckTitleOrderRule>();
@@ -73,8 +74,10 @@ services.AddScoped<ChangeStateToPublishedAction>();
 services.AddScoped<CreateAction>();
 
 #region another way to inject actions
+
 services.AddScoped<IAction<Order>, ChangeStateToPublishedAction>();
 services.AddScoped<IAction<Order>, CreateAction>();
+
 #endregion
 
 var container = services.BuildServiceProvider();
