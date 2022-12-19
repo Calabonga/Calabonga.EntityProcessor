@@ -13,4 +13,4 @@ Entity processing with domain event collection. Rules, Actions, Validators, some
 
 ## Nuget
 
-[https://github.com/Calabonga/Calabonga.EntityProcessor](https://github.com/Calabonga/Calabonga.EntityProcessor)
+[https://www.nuget.org/packages/Calabonga.EntityProcessor/](https://www.nuget.org/packages/Calabonga.EntityProcessor/)
