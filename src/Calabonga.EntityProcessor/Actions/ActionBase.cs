@@ -12,10 +12,16 @@ public abstract class ActionBase<TEntity> : IAction<TEntity> where TEntity : cla
     /// <param name="entity"></param>
     /// <param name="context"></param>
     /// <param name="cancellationToken"></param>
-    /// <returns></returns>
+    /// <returns>результат обработки сущности</returns>
     public abstract Task<EntityActionResult> ApplyAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
 
+    /// <summary>
+    /// Должно ли действие быть перехвачено
+    /// </summary>
+    /// <remarks>
+    /// По умолчанию не перехватываем никакие действия</remarks>
     public virtual bool IsShouldBeHandled { get; } = false;
 
+    /// <inheritdoc />
     public virtual string? Name { get; } = null;
 }
