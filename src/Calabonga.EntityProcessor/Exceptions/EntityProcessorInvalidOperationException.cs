@@ -1,9 +1,9 @@
 ﻿namespace Calabonga.EntityProcessor.Exceptions;
 
-public class EntityProcessorInvalidOperationException: Exception
+public class EntityProcessorInvalidOperationException : Exception
 {
-    public EntityProcessorInvalidOperationException(string? message): base(message)
+    public EntityProcessorInvalidOperationException(string? message) : base(message)
     {
-        
+
     }
 }

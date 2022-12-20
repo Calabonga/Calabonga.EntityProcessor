@@ -15,7 +15,8 @@ public class EntityProcessorConfiguration
     public bool SkipRuleDuplicates { get; set; }
 
     /// <summary>
-    /// Если включено, то полученные при обработке команды <see cref="IAction{TEntity}"/> события домена <see cref="IDomainEvent"/> будут автоматически запущены через посредника <see cref="IMediator"/> 
+    /// Если включено, то полученные при обработке команды <see cref="IAction{TEntity}"/> события
+    /// домена <see cref="IDomainEvent"/> будут автоматически запущены через посредника <see cref="IMediator"/> 
     /// </summary>
     public bool AutoFireDomainEvents { get; set; }
 
