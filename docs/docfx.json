@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../../",
+          "src": "../",
           "files": [
             "src/Calabonga.EntityProcessor.sln"
           ]
