@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: dotnet build src/Calabonga.EntityProcessor.sln --configuration Release --no-restore
       - name: Publish Calabonga.EntityProcessor
-        uses: brandedoutcast/publish-nuget@v2.5.2
+        uses: brandedoutcast/publish-nuget@v2.5.5
         with:
           PROJECT_FILE_PATH: src/Calabonga.EntityProcessor/Calabonga.EntityProcessor.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
