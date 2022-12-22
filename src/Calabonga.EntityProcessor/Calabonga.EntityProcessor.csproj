@@ -18,7 +18,6 @@
     <PackageReleaseNotes>First release</PackageReleaseNotes>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Calabonga.EntityProcessor</PackageId>
     <Product>Calabonga.EntityProcessor</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -28,6 +27,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Calabonga/EntityProcessor</RepositoryUrl>
     <IncludeSymbols>False</IncludeSymbols>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
