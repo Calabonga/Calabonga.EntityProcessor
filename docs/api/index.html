@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER | Calabonga.EntityProcessor </title>
+    <title>&#1063;&#1090;&#1086; &#1090;&#1072;&#1082;&#1086;&#1077; EntityProcessor? | Calabonga.EntityProcessor </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER | Calabonga.EntityProcessor ">
+    <meta name="title" content="&#1063;&#1090;&#1086; &#1090;&#1072;&#1082;&#1086;&#1077; EntityProcessor? | Calabonga.EntityProcessor ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,9 +66,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
+<h2 id="что-такое-entityprocessor">Что такое EntityProcessor?</h2>
 
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<p>Нет ничего проще, чем создать хорошую архитектуру для проекта. Вот только понятие &quot;хорошая&quot; не всегда совпадает с общепринятыми стандартами, паттернами и прочими правилами разработки. Обычно работает одно правило: &quot;сойдет и так&quot;. Чем писать много букв, предлагаю посмотреть на видео, на котором я постарался по полочкам разложить необходимость использования подобного решения. И, конечно же, обосновав это как только мог, ссылаясь на свои опыт и практику.</p>
+<p>Для того, чтобы показать, как использовать EntityProcessor задумана простая логика, которая реализована в примерах (смотри папку <code>Samples</code> в репозитории)</p>
+<h3 id="создание-order">Создание Order</h3>
+<p>По идеи требуется создать сущность Order использую какие-то проверки свойств. В случае успешного прохождения всех проверок сущность &quot;сохраняется&quot; в базу данных.</p>
+<h3 id="обновление-order">Обновление Order</h3>
+<p>Следующий шаг, обновление статуса сущности Order. При проверки определенных свойств у сущности, также &quot;сохраняем&quot; обновления в базу данных.</p>
+<h3 id="события-домена-domain-events">События домена (Domain Events)</h3>
+<p>В процессе проверок, требуется запустить соответствующие события (Domain Event). В случае Calabonga.EntityProcessor.ConsoleAppAdvanced регистрируем их в выходных данных, а дальше запускаем эти события через Mediatr.</p>
+<h3 id="calabongaentityprocessorconsoleappgood">Calabonga.EntityProcessor.ConsoleAppGood</h3>
+<p>В этом проекте реализован простой, но при этом не менее работоспособный вариант реализации описанной выше логики.</p>
+<h3 id="calabongaentityprocessorconsoleappadvanced">Calabonga.EntityProcessor.ConsoleAppAdvanced</h3>
+<p>В этом проекте реализован уже более продвинутый способ реализации, которые дает полных контроль происходящего, но и кода придется написать немного больше.</p>
+<h2 id="дополнительно">Дополнительно</h2>
+<ul>
+<li><p><a href="https://www.calabonga.net/blog/post/entity-processor">Статья в блоге</a></p>
+</li>
+<li><p><a href="https://youtu.be/q_6qz4z37LU">Видео на YouTube</a></p>
+</li>
+<li><p><a href="https://github.com/Calabonga/Calabonga.EntityProcessor">Nuget-пакет</a></p>
+</li>
+</ul>
 </article>
           </div>
           
