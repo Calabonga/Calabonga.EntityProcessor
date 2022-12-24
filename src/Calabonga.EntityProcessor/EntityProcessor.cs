@@ -9,8 +9,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Calabonga.EntityProcessor;
 
-public abstract class EntityProcessor<TEntity>: IEntityProcessor
-    where TEntity : class 
+/// <summary>
+/// Процессор с реализацией базовых механизмов обработки команд <see cref="IAction{TEntity}"/> по правилам <see cref="IRule{TEntity}"/> 
+/// </summary>
+/// <typeparam name="TEntity"></typeparam>
 {
     private readonly EntityProcessorContext _context = new();
     private readonly EntityProcessorConfiguration<TEntity>? _configuration;
@@ -18,7 +20,13 @@ public abstract class EntityProcessor<TEntity>: IEntityProcessor
     private readonly ILogger _logger;
     private readonly IEnumerable<IRule<TEntity>> _rules;
 
-    protected EntityProcessor(
+    /// <summary>
+    /// Создает экземпляр процессора
+    /// </summary>
+    /// <param name="mediator">https://github.com/jbogard/MediatR</param>
+    /// <param name="configuration"><see cref="EntityProcessorConfiguration"/></param>
+    /// <param name="logger"></param>
+    /// <param name="rules"></param>
         IMediator mediator,
         EntityProcessorConfiguration<TEntity>? configuration,
         ILogger logger,

@@ -7,10 +7,8 @@ Entity processing with domain event collection. Rules, Actions, Validators, some
 
 Нет ничего проще, чем создать хорошую архитектуру для проекта. Вот только понятие "хорошая" не всегда совпадает с общепринятыми стандартами, паттернами и прочими правилами разработки. Обычно работает одно правило: "сойдет и так". Чем писать много букв, предлагаю посмотреть на видео, на котором я постарался по полочкам разложить необходимость использования подобного решения. И, конечно же, обосновав это как только мог, ссылаясь на свои опыт и практику.
 
-## Описание
+## Ссылки
 
-[готовиться]
-
-## Nuget
-
-[https://github.com/Calabonga/Calabonga.EntityProcessor](https://github.com/Calabonga/Calabonga.EntityProcessor)
+- [Nuget-пакет](https://www.nuget.org/packages/Calabonga.EntityProcessor/)
+- [Статья в блоге ](https://www.calabonga.net/blog/post/entity-processor)
+- [Видео на youtube](https://youtu.be/q_6qz4z37LU)
