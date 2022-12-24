@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Rules
+  commentId: N:Calabonga.EntityProcessor.Rules
+  id: Calabonga.EntityProcessor.Rules
+  children:
+  - Calabonga.EntityProcessor.Rules.IRule`1
+  - Calabonga.EntityProcessor.Rules.IRuleResult
+  - Calabonga.EntityProcessor.Rules.RuleBase`1
+  - Calabonga.EntityProcessor.Rules.SuccessRuleResult
+  langs:
+  - csharp
+  - vb
+  name: Calabonga.EntityProcessor.Rules
+  nameWithType: Calabonga.EntityProcessor.Rules
+  fullName: Calabonga.EntityProcessor.Rules
+  type: Namespace
+  assemblies:
+  - Calabonga.EntityProcessor
+references:
+- uid: Calabonga.EntityProcessor.Rules.IRule`1
+  commentId: T:Calabonga.EntityProcessor.Rules.IRule`1
+  name: IRule<TEntity>
+  nameWithType: IRule<TEntity>
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>
+  nameWithType.vb: IRule(Of TEntity)
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity)
+  name.vb: IRule(Of TEntity)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Rules.IRuleResult
+  commentId: T:Calabonga.EntityProcessor.Rules.IRuleResult
+  parent: Calabonga.EntityProcessor.Rules
+  name: IRuleResult
+  nameWithType: IRuleResult
+  fullName: Calabonga.EntityProcessor.Rules.IRuleResult
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1
+  commentId: T:Calabonga.EntityProcessor.Rules.RuleBase`1
+  name: RuleBase<TEntity>
+  nameWithType: RuleBase<TEntity>
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>
+  nameWithType.vb: RuleBase(Of TEntity)
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity)
+  name.vb: RuleBase(Of TEntity)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.RuleBase`1
+    name: RuleBase
+    nameWithType: RuleBase
+    fullName: Calabonga.EntityProcessor.Rules.RuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.RuleBase`1
+    name: RuleBase
+    nameWithType: RuleBase
+    fullName: Calabonga.EntityProcessor.Rules.RuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Rules.SuccessRuleResult
+  commentId: T:Calabonga.EntityProcessor.Rules.SuccessRuleResult
+  name: SuccessRuleResult
+  nameWithType: SuccessRuleResult
+  fullName: Calabonga.EntityProcessor.Rules.SuccessRuleResult
+- uid: Calabonga.EntityProcessor.Rules
+  commentId: N:Calabonga.EntityProcessor.Rules
+  name: Calabonga.EntityProcessor.Rules
+  nameWithType: Calabonga.EntityProcessor.Rules
+  fullName: Calabonga.EntityProcessor.Rules

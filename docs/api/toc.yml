@@ -1,0 +1,86 @@
+### YamlMime:TableOfContent
+- uid: Calabonga.EntityProcessor
+  name: Calabonga.EntityProcessor
+  items:
+  - uid: Calabonga.EntityProcessor.DomainEventCollectionBase
+    name: DomainEventCollectionBase
+  - uid: Calabonga.EntityProcessor.EntityProcessor`1
+    name: EntityProcessor<TEntity>
+    name.vb: EntityProcessor(Of TEntity)
+  - uid: Calabonga.EntityProcessor.EntityProcessorConfiguration`1
+    name: EntityProcessorConfiguration<TEntity>
+    name.vb: EntityProcessorConfiguration(Of TEntity)
+  - uid: Calabonga.EntityProcessor.EntityProcessorContext
+    name: EntityProcessorContext
+  - uid: Calabonga.EntityProcessor.IEntityProcessor
+    name: IEntityProcessor
+  - uid: Calabonga.EntityProcessor.IEntityProcessorConfiguration
+    name: IEntityProcessorConfiguration
+- uid: Calabonga.EntityProcessor.Actions
+  name: Calabonga.EntityProcessor.Actions
+  items:
+  - uid: Calabonga.EntityProcessor.Actions.ActionBase`1
+    name: ActionBase<TEntity>
+    name.vb: ActionBase(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Actions.EntityActionResult
+    name: EntityActionResult
+  - uid: Calabonga.EntityProcessor.Actions.IAction`1
+    name: IAction<TEntity>
+    name.vb: IAction(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Actions.IHaveDomainEvents
+    name: IHaveDomainEvents
+  - uid: Calabonga.EntityProcessor.Actions.IHaveName
+    name: IHaveName
+- uid: Calabonga.EntityProcessor.Base
+  name: Calabonga.EntityProcessor.Base
+  items:
+  - uid: Calabonga.EntityProcessor.Base.RuleResultBase
+    name: RuleResultBase
+- uid: Calabonga.EntityProcessor.Events
+  name: Calabonga.EntityProcessor.Events
+  items:
+  - uid: Calabonga.EntityProcessor.Events.IDomainCommand
+    name: IDomainCommand
+  - uid: Calabonga.EntityProcessor.Events.IDomainEvent
+    name: IDomainEvent
+  - uid: Calabonga.EntityProcessor.Events.IDomainNotification
+    name: IDomainNotification
+- uid: Calabonga.EntityProcessor.Exceptions
+  name: Calabonga.EntityProcessor.Exceptions
+  items:
+  - uid: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException
+    name: EntityProcessorInvalidOperationException
+- uid: Calabonga.EntityProcessor.Extensions
+  name: Calabonga.EntityProcessor.Extensions
+  items:
+  - uid: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+- uid: Calabonga.EntityProcessor.Results
+  name: Calabonga.EntityProcessor.Results
+  items:
+  - uid: Calabonga.EntityProcessor.Results.ErrorRuleResult
+    name: ErrorRuleResult
+  - uid: Calabonga.EntityProcessor.Results.ExecutionErrorResult`1
+    name: ExecutionErrorResult<TEntity>
+    name.vb: ExecutionErrorResult(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Results.ExecutionResultBase`1
+    name: ExecutionResultBase<TEntity>
+    name.vb: ExecutionResultBase(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Results.ExecutionSuccessResult`1
+    name: ExecutionSuccessResult<TEntity>
+    name.vb: ExecutionSuccessResult(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Results.ResultBase
+    name: ResultBase
+- uid: Calabonga.EntityProcessor.Rules
+  name: Calabonga.EntityProcessor.Rules
+  items:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule<TEntity>
+    name.vb: IRule(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Rules.IRuleResult
+    name: IRuleResult
+  - uid: Calabonga.EntityProcessor.Rules.RuleBase`1
+    name: RuleBase<TEntity>
+    name.vb: RuleBase(Of TEntity)
+  - uid: Calabonga.EntityProcessor.Rules.SuccessRuleResult
+    name: SuccessRuleResult

@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Results.ErrorRuleResult
+  commentId: T:Calabonga.EntityProcessor.Results.ErrorRuleResult
+  id: ErrorRuleResult
+  parent: Calabonga.EntityProcessor.Results
+  children:
+  - Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor(System.String)
+  - Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorRuleResult
+  nameWithType: ErrorRuleResult
+  fullName: Calabonga.EntityProcessor.Results.ErrorRuleResult
+  type: Class
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: ErrorRuleResult
+    path: ../../src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Results
+  syntax:
+    content: 'public class ErrorRuleResult : RuleResultBase, IRuleResult'
+    content.vb: >-
+      Public Class ErrorRuleResult
+          Inherits RuleResultBase
+          Implements IRuleResult
+  inheritance:
+  - System.Object
+  - Calabonga.EntityProcessor.Base.RuleResultBase
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRuleResult
+  inheritedMembers:
+  - Calabonga.EntityProcessor.Base.RuleResultBase.Ok
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor(System.String)
+  commentId: M:Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Calabonga.EntityProcessor.Results.ErrorRuleResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorRuleResult(String)
+  nameWithType: ErrorRuleResult.ErrorRuleResult(String)
+  fullName: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorRuleResult(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: .ctor
+    path: ../../src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+    startLine: 6
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Results
+  syntax:
+    content: public ErrorRuleResult(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage
+  commentId: P:Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage
+  id: ErrorMessage
+  parent: Calabonga.EntityProcessor.Results.ErrorRuleResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: ErrorRuleResult.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: ErrorMessage
+    path: ../../src/Calabonga.EntityProcessor/Results/ErrorRuleResult.cs
+    startLine: 9
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Results
+  syntax:
+    content: public override string ErrorMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property ErrorMessage As String
+  overridden: Calabonga.EntityProcessor.Base.RuleResultBase.ErrorMessage
+  overload: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: Calabonga.EntityProcessor.Results
+  commentId: N:Calabonga.EntityProcessor.Results
+  name: Calabonga.EntityProcessor.Results
+  nameWithType: Calabonga.EntityProcessor.Results
+  fullName: Calabonga.EntityProcessor.Results
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Calabonga.EntityProcessor.Base.RuleResultBase
+  commentId: T:Calabonga.EntityProcessor.Base.RuleResultBase
+  parent: Calabonga.EntityProcessor.Base
+  name: RuleResultBase
+  nameWithType: RuleResultBase
+  fullName: Calabonga.EntityProcessor.Base.RuleResultBase
+- uid: Calabonga.EntityProcessor.Rules.IRuleResult
+  commentId: T:Calabonga.EntityProcessor.Rules.IRuleResult
+  parent: Calabonga.EntityProcessor.Rules
+  name: IRuleResult
+  nameWithType: IRuleResult
+  fullName: Calabonga.EntityProcessor.Rules.IRuleResult
+- uid: Calabonga.EntityProcessor.Base.RuleResultBase.Ok
+  commentId: P:Calabonga.EntityProcessor.Base.RuleResultBase.Ok
+  parent: Calabonga.EntityProcessor.Base.RuleResultBase
+  name: Ok
+  nameWithType: RuleResultBase.Ok
+  fullName: Calabonga.EntityProcessor.Base.RuleResultBase.Ok
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calabonga.EntityProcessor.Base
+  commentId: N:Calabonga.EntityProcessor.Base
+  name: Calabonga.EntityProcessor.Base
+  nameWithType: Calabonga.EntityProcessor.Base
+  fullName: Calabonga.EntityProcessor.Base
+- uid: Calabonga.EntityProcessor.Rules
+  commentId: N:Calabonga.EntityProcessor.Rules
+  name: Calabonga.EntityProcessor.Rules
+  nameWithType: Calabonga.EntityProcessor.Rules
+  fullName: Calabonga.EntityProcessor.Rules
+- uid: Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor*
+  commentId: Overload:Calabonga.EntityProcessor.Results.ErrorRuleResult.#ctor
+  name: ErrorRuleResult
+  nameWithType: ErrorRuleResult.ErrorRuleResult
+  fullName: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorRuleResult
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Calabonga.EntityProcessor.Base.RuleResultBase.ErrorMessage
+  commentId: P:Calabonga.EntityProcessor.Base.RuleResultBase.ErrorMessage
+  parent: Calabonga.EntityProcessor.Base.RuleResultBase
+  name: ErrorMessage
+  nameWithType: RuleResultBase.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Base.RuleResultBase.ErrorMessage
+- uid: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage*
+  commentId: Overload:Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage
+  name: ErrorMessage
+  nameWithType: ErrorRuleResult.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Results.ErrorRuleResult.ErrorMessage

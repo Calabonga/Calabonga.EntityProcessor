@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Events.IDomainCommand
+  commentId: T:Calabonga.EntityProcessor.Events.IDomainCommand
+  id: IDomainCommand
+  parent: Calabonga.EntityProcessor.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IDomainCommand
+  nameWithType: IDomainCommand
+  fullName: Calabonga.EntityProcessor.Events.IDomainCommand
+  type: Interface
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Events/IDomainCommand.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: IDomainCommand
+    path: ../../src/Calabonga.EntityProcessor/Events/IDomainCommand.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Events
+  syntax:
+    content: 'public interface IDomainCommand : IDomainEvent, IRequest, IRequest<Unit>, IBaseRequest'
+    content.vb: >-
+      Public Interface IDomainCommand
+          Inherits IDomainEvent, IRequest
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Calabonga.EntityProcessor.Events
+  commentId: N:Calabonga.EntityProcessor.Events
+  name: Calabonga.EntityProcessor.Events
+  nameWithType: Calabonga.EntityProcessor.Events
+  fullName: Calabonga.EntityProcessor.Events

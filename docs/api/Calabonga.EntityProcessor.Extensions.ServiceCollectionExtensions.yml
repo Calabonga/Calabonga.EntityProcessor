@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions
+  commentId: T:Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Calabonga.EntityProcessor.Extensions
+  children:
+  - Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Action{``1})
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Extensions/ServiceCollectionExtensions.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: ServiceCollectionExtensions
+    path: ../../src/Calabonga.EntityProcessor/Extensions/ServiceCollectionExtensions.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Extensions
+  syntax:
+    content: public static class ServiceCollectionExtensions
+    content.vb: Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Action{``1})
+  commentId: M:Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Action{``1})
+  id: AddEntityProcessor``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Action{``1})
+  isExtensionMethod: true
+  parent: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddEntityProcessor<TProcessor, TConfiguration>(IServiceCollection, Action<TConfiguration>)
+  nameWithType: ServiceCollectionExtensions.AddEntityProcessor<TProcessor, TConfiguration>(IServiceCollection, Action<TConfiguration>)
+  fullName: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor<TProcessor, TConfiguration>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Action<TConfiguration>)
+  type: Method
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Extensions/ServiceCollectionExtensions.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: AddEntityProcessor
+    path: ../../src/Calabonga.EntityProcessor/Extensions/ServiceCollectionExtensions.cs
+    startLine: 6
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Extensions
+  syntax:
+    content: >-
+      public static void AddEntityProcessor<TProcessor, TConfiguration>(this IServiceCollection services, Action<TConfiguration> configuration)
+          where TProcessor : IEntityProcessor where TConfiguration : IEntityProcessorConfiguration
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configuration
+      type: Action{{TConfiguration}}
+    typeParameters:
+    - id: TProcessor
+    - id: TConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddEntityProcessor(Of TProcessor As IEntityProcessor, TConfiguration As IEntityProcessorConfiguration)(services As IServiceCollection, configuration As Action(Of TConfiguration))
+  overload: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor*
+  nameWithType.vb: ServiceCollectionExtensions.AddEntityProcessor(Of TProcessor, TConfiguration)(IServiceCollection, Action(Of TConfiguration))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor(Of TProcessor, TConfiguration)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Action(Of TConfiguration))
+  name.vb: AddEntityProcessor(Of TProcessor, TConfiguration)(IServiceCollection, Action(Of TConfiguration))
+references:
+- uid: Calabonga.EntityProcessor.Extensions
+  commentId: N:Calabonga.EntityProcessor.Extensions
+  name: Calabonga.EntityProcessor.Extensions
+  nameWithType: Calabonga.EntityProcessor.Extensions
+  fullName: Calabonga.EntityProcessor.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor*
+  commentId: Overload:Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor
+  name: AddEntityProcessor
+  nameWithType: ServiceCollectionExtensions.AddEntityProcessor
+  fullName: Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.AddEntityProcessor
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Action{{TConfiguration}}
+  commentId: '!:Action{``1}'
+  definition: Action`1
+  name: Action<TConfiguration>
+  nameWithType: Action<TConfiguration>
+  fullName: Action<TConfiguration>
+  nameWithType.vb: Action(Of TConfiguration)
+  fullName.vb: Action(Of TConfiguration)
+  name.vb: Action(Of TConfiguration)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TConfiguration
+    nameWithType: TConfiguration
+    fullName: TConfiguration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TConfiguration
+    nameWithType: TConfiguration
+    fullName: TConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Action`1
+  commentId: '!:Action`1'
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

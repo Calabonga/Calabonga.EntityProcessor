@@ -1,0 +1,985 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1
+  commentId: T:Calabonga.EntityProcessor.Rules.RuleBase`1
+  id: RuleBase`1
+  parent: Calabonga.EntityProcessor.Rules
+  children:
+  - Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage
+  - Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName
+  - Calabonga.EntityProcessor.Rules.RuleBase`1.Name
+  - Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage
+  - Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: RuleBase<TEntity>
+  nameWithType: RuleBase<TEntity>
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>
+  type: Class
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: RuleBase
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 2
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: 'public abstract class RuleBase<TEntity> : IRule<TEntity>, IHaveName where TEntity : class'
+    typeParameters:
+    - id: TEntity
+    content.vb: >-
+      Public MustInherit Class RuleBase(Of TEntity As Class)
+          Implements IRule(Of TEntity), IHaveName
+  inheritance:
+  - System.Object
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  - Calabonga.EntityProcessor.Actions.IHaveName
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: RuleBase(Of TEntity)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity)
+  name.vb: RuleBase(Of TEntity)
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  commentId: M:Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  id: ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  parent: Calabonga.EntityProcessor.Rules.RuleBase`1
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  nameWithType: RuleBase<TEntity>.ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: ValidateAsync
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: public abstract Task<IRuleResult> ValidateAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: context
+      type: Calabonga.EntityProcessor.EntityProcessorContext
+    - id: cancellationToken
+      type: CancellationToken
+    return:
+      type: Task{Calabonga.EntityProcessor.Rules.IRuleResult}
+    content.vb: Public MustOverride Function ValidateAsync(entity As TEntity, context As EntityProcessorContext, cancellationToken As CancellationToken) As Task(Of IRuleResult)
+  overload: Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync*
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.ValidateAsync({TEntity},Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  nameWithType.vb: RuleBase(Of TEntity).ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage
+  id: ErrorMessage
+  parent: Calabonga.EntityProcessor.Rules.RuleBase`1
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: RuleBase<TEntity>.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: ErrorMessage
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 6
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: public virtual string ErrorMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property ErrorMessage As String
+  overload: Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage*
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.ErrorMessage
+  nameWithType.vb: RuleBase(Of TEntity).ErrorMessage
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).ErrorMessage
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage
+  id: SuccessMessage
+  parent: Calabonga.EntityProcessor.Rules.RuleBase`1
+  langs:
+  - csharp
+  - vb
+  name: SuccessMessage
+  nameWithType: RuleBase<TEntity>.SuccessMessage
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.SuccessMessage
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: SuccessMessage
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 8
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: public virtual string SuccessMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property SuccessMessage As String
+  overload: Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage*
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.SuccessMessage
+  nameWithType.vb: RuleBase(Of TEntity).SuccessMessage
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).SuccessMessage
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName
+  commentId: P:Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName
+  id: GroupName
+  parent: Calabonga.EntityProcessor.Rules.RuleBase`1
+  langs:
+  - csharp
+  - vb
+  name: GroupName
+  nameWithType: RuleBase<TEntity>.GroupName
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.GroupName
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: GroupName
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 10
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: public virtual string GroupName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property GroupName As String
+  overload: Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName*
+  implements:
+  - Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.GroupName
+  nameWithType.vb: RuleBase(Of TEntity).GroupName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).GroupName
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.Name
+  commentId: P:Calabonga.EntityProcessor.Rules.RuleBase`1.Name
+  id: Name
+  parent: Calabonga.EntityProcessor.Rules.RuleBase`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RuleBase<TEntity>.Name
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.Name
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: Name
+    path: ../../src/Calabonga.EntityProcessor/Rules/RuleBase.cs
+    startLine: 11
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Rules
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Calabonga.EntityProcessor.Rules.RuleBase`1.Name*
+  implements:
+  - Calabonga.EntityProcessor.Actions.IHaveName.Name
+  nameWithType.vb: RuleBase(Of TEntity).Name
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).Name
+references:
+- uid: Calabonga.EntityProcessor.Rules
+  commentId: N:Calabonga.EntityProcessor.Rules
+  name: Calabonga.EntityProcessor.Rules
+  nameWithType: Calabonga.EntityProcessor.Rules
+  fullName: Calabonga.EntityProcessor.Rules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  commentId: T:Calabonga.EntityProcessor.Rules.IRule{`0}
+  parent: Calabonga.EntityProcessor.Rules
+  definition: Calabonga.EntityProcessor.Rules.IRule`1
+  name: IRule<TEntity>
+  nameWithType: IRule<TEntity>
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>
+  nameWithType.vb: IRule(Of TEntity)
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity)
+  name.vb: IRule(Of TEntity)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Actions.IHaveName
+  commentId: T:Calabonga.EntityProcessor.Actions.IHaveName
+  parent: Calabonga.EntityProcessor.Actions
+  name: IHaveName
+  nameWithType: IHaveName
+  fullName: Calabonga.EntityProcessor.Actions.IHaveName
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calabonga.EntityProcessor.Rules.IRule`1
+  commentId: T:Calabonga.EntityProcessor.Rules.IRule`1
+  name: IRule<TEntity>
+  nameWithType: IRule<TEntity>
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>
+  nameWithType.vb: IRule(Of TEntity)
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity)
+  name.vb: IRule(Of TEntity)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1
+    name: IRule
+    nameWithType: IRule
+    fullName: Calabonga.EntityProcessor.Rules.IRule
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Actions
+  commentId: N:Calabonga.EntityProcessor.Actions
+  name: Calabonga.EntityProcessor.Actions
+  nameWithType: Calabonga.EntityProcessor.Actions
+  fullName: Calabonga.EntityProcessor.Actions
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync*
+  commentId: Overload:Calabonga.EntityProcessor.Rules.RuleBase`1.ValidateAsync
+  name: ValidateAsync
+  nameWithType: RuleBase<TEntity>.ValidateAsync
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.ValidateAsync
+  nameWithType.vb: RuleBase(Of TEntity).ValidateAsync
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).ValidateAsync
+- uid: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.ValidateAsync({TEntity},Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  commentId: M:Calabonga.EntityProcessor.Rules.IRule{`0}.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  parent: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  definition: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  name: ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  nameWithType: IRule<TEntity>.ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+  nameWithType.vb: IRule(Of TEntity).ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+    name: ValidateAsync
+    nameWithType: IRule<TEntity>.ValidateAsync
+    fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ValidateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Calabonga.EntityProcessor.EntityProcessorContext
+    name: EntityProcessorContext
+    nameWithType: EntityProcessorContext
+    fullName: Calabonga.EntityProcessor.EntityProcessorContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+    name: ValidateAsync
+    nameWithType: IRule(Of TEntity).ValidateAsync
+    fullName: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ValidateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Calabonga.EntityProcessor.EntityProcessorContext
+    name: EntityProcessorContext
+    nameWithType: EntityProcessorContext
+    fullName: Calabonga.EntityProcessor.EntityProcessorContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Calabonga.EntityProcessor.EntityProcessorContext
+  commentId: T:Calabonga.EntityProcessor.EntityProcessorContext
+  parent: Calabonga.EntityProcessor
+  name: EntityProcessorContext
+  nameWithType: EntityProcessorContext
+  fullName: Calabonga.EntityProcessor.EntityProcessorContext
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Task{Calabonga.EntityProcessor.Rules.IRuleResult}
+  commentId: '!:Task{Calabonga.EntityProcessor.Rules.IRuleResult}'
+  definition: Task`1
+  name: Task<IRuleResult>
+  nameWithType: Task<IRuleResult>
+  fullName: Task<Calabonga.EntityProcessor.Rules.IRuleResult>
+  nameWithType.vb: Task(Of IRuleResult)
+  fullName.vb: Task(Of Calabonga.EntityProcessor.Rules.IRuleResult)
+  name.vb: Task(Of IRuleResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Calabonga.EntityProcessor.Rules.IRuleResult
+    name: IRuleResult
+    nameWithType: IRuleResult
+    fullName: Calabonga.EntityProcessor.Rules.IRuleResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Calabonga.EntityProcessor.Rules.IRuleResult
+    name: IRuleResult
+    nameWithType: IRuleResult
+    fullName: Calabonga.EntityProcessor.Rules.IRuleResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  commentId: M:Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+  isExternal: true
+  name: ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  nameWithType: IRule<TEntity>.ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+  nameWithType.vb: IRule(Of TEntity).ValidateAsync(TEntity, EntityProcessorContext, CancellationToken)
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ValidateAsync(TEntity, Calabonga.EntityProcessor.EntityProcessorContext, CancellationToken)
+  spec.csharp:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+    name: ValidateAsync
+    nameWithType: IRule<TEntity>.ValidateAsync
+    fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ValidateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Calabonga.EntityProcessor.EntityProcessorContext
+    name: EntityProcessorContext
+    nameWithType: EntityProcessorContext
+    fullName: Calabonga.EntityProcessor.EntityProcessorContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Calabonga.EntityProcessor.Rules.IRule`1.ValidateAsync(`0,Calabonga.EntityProcessor.EntityProcessorContext,CancellationToken)
+    name: ValidateAsync
+    nameWithType: IRule(Of TEntity).ValidateAsync
+    fullName: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ValidateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Calabonga.EntityProcessor.EntityProcessorContext
+    name: EntityProcessorContext
+    nameWithType: EntityProcessorContext
+    fullName: Calabonga.EntityProcessor.EntityProcessorContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Calabonga.EntityProcessor
+  commentId: N:Calabonga.EntityProcessor
+  name: Calabonga.EntityProcessor
+  nameWithType: Calabonga.EntityProcessor
+  fullName: Calabonga.EntityProcessor
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage*
+  commentId: Overload:Calabonga.EntityProcessor.Rules.RuleBase`1.ErrorMessage
+  name: ErrorMessage
+  nameWithType: RuleBase<TEntity>.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.ErrorMessage
+  nameWithType.vb: RuleBase(Of TEntity).ErrorMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).ErrorMessage
+- uid: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.ErrorMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule{`0}.ErrorMessage
+  parent: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  definition: Calabonga.EntityProcessor.Rules.IRule`1.ErrorMessage
+  name: ErrorMessage
+  nameWithType: IRule<TEntity>.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ErrorMessage
+  nameWithType.vb: IRule(Of TEntity).ErrorMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ErrorMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Calabonga.EntityProcessor.Rules.IRule`1.ErrorMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule`1.ErrorMessage
+  name: ErrorMessage
+  nameWithType: IRule<TEntity>.ErrorMessage
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.ErrorMessage
+  nameWithType.vb: IRule(Of TEntity).ErrorMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).ErrorMessage
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage*
+  commentId: Overload:Calabonga.EntityProcessor.Rules.RuleBase`1.SuccessMessage
+  name: SuccessMessage
+  nameWithType: RuleBase<TEntity>.SuccessMessage
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.SuccessMessage
+  nameWithType.vb: RuleBase(Of TEntity).SuccessMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).SuccessMessage
+- uid: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.SuccessMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule{`0}.SuccessMessage
+  parent: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  definition: Calabonga.EntityProcessor.Rules.IRule`1.SuccessMessage
+  name: SuccessMessage
+  nameWithType: IRule<TEntity>.SuccessMessage
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.SuccessMessage
+  nameWithType.vb: IRule(Of TEntity).SuccessMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).SuccessMessage
+- uid: Calabonga.EntityProcessor.Rules.IRule`1.SuccessMessage
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule`1.SuccessMessage
+  name: SuccessMessage
+  nameWithType: IRule<TEntity>.SuccessMessage
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.SuccessMessage
+  nameWithType.vb: IRule(Of TEntity).SuccessMessage
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).SuccessMessage
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName*
+  commentId: Overload:Calabonga.EntityProcessor.Rules.RuleBase`1.GroupName
+  name: GroupName
+  nameWithType: RuleBase<TEntity>.GroupName
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.GroupName
+  nameWithType.vb: RuleBase(Of TEntity).GroupName
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).GroupName
+- uid: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}.GroupName
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule{`0}.GroupName
+  parent: Calabonga.EntityProcessor.Rules.IRule{{TEntity}}
+  definition: Calabonga.EntityProcessor.Rules.IRule`1.GroupName
+  name: GroupName
+  nameWithType: IRule<TEntity>.GroupName
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.GroupName
+  nameWithType.vb: IRule(Of TEntity).GroupName
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).GroupName
+- uid: Calabonga.EntityProcessor.Rules.IRule`1.GroupName
+  commentId: P:Calabonga.EntityProcessor.Rules.IRule`1.GroupName
+  name: GroupName
+  nameWithType: IRule<TEntity>.GroupName
+  fullName: Calabonga.EntityProcessor.Rules.IRule<TEntity>.GroupName
+  nameWithType.vb: IRule(Of TEntity).GroupName
+  fullName.vb: Calabonga.EntityProcessor.Rules.IRule(Of TEntity).GroupName
+- uid: Calabonga.EntityProcessor.Rules.RuleBase`1.Name*
+  commentId: Overload:Calabonga.EntityProcessor.Rules.RuleBase`1.Name
+  name: Name
+  nameWithType: RuleBase<TEntity>.Name
+  fullName: Calabonga.EntityProcessor.Rules.RuleBase<TEntity>.Name
+  nameWithType.vb: RuleBase(Of TEntity).Name
+  fullName.vb: Calabonga.EntityProcessor.Rules.RuleBase(Of TEntity).Name
+- uid: Calabonga.EntityProcessor.Actions.IHaveName.Name
+  commentId: P:Calabonga.EntityProcessor.Actions.IHaveName.Name
+  parent: Calabonga.EntityProcessor.Actions.IHaveName
+  name: Name
+  nameWithType: IHaveName.Name
+  fullName: Calabonga.EntityProcessor.Actions.IHaveName.Name

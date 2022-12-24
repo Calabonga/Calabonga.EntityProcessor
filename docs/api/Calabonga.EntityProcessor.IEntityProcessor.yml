@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.IEntityProcessor
+  commentId: T:Calabonga.EntityProcessor.IEntityProcessor
+  id: IEntityProcessor
+  parent: Calabonga.EntityProcessor
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IEntityProcessor
+  nameWithType: IEntityProcessor
+  fullName: Calabonga.EntityProcessor.IEntityProcessor
+  type: Interface
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/EntityProcessor.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: IEntityProcessor
+    path: ../../src/Calabonga.EntityProcessor/EntityProcessor.cs
+    startLine: 108
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor
+  syntax:
+    content: public interface IEntityProcessor
+    content.vb: Public Interface IEntityProcessor
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Calabonga.EntityProcessor
+  commentId: N:Calabonga.EntityProcessor
+  name: Calabonga.EntityProcessor
+  nameWithType: Calabonga.EntityProcessor
+  fullName: Calabonga.EntityProcessor

@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Actions.IHaveName
+  commentId: T:Calabonga.EntityProcessor.Actions.IHaveName
+  id: IHaveName
+  parent: Calabonga.EntityProcessor.Actions
+  children:
+  - Calabonga.EntityProcessor.Actions.IHaveName.Name
+  langs:
+  - csharp
+  - vb
+  name: IHaveName
+  nameWithType: IHaveName
+  fullName: Calabonga.EntityProcessor.Actions.IHaveName
+  type: Interface
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Actions/IHaveName.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: IHaveName
+    path: ../../src/Calabonga.EntityProcessor/Actions/IHaveName.cs
+    startLine: 2
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Actions
+  syntax:
+    content: public interface IHaveName
+    content.vb: Public Interface IHaveName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Calabonga.EntityProcessor.Actions.IHaveName.Name
+  commentId: P:Calabonga.EntityProcessor.Actions.IHaveName.Name
+  id: Name
+  parent: Calabonga.EntityProcessor.Actions.IHaveName
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IHaveName.Name
+  fullName: Calabonga.EntityProcessor.Actions.IHaveName.Name
+  type: Property
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Actions/IHaveName.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: Name
+    path: ../../src/Calabonga.EntityProcessor/Actions/IHaveName.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Actions
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Calabonga.EntityProcessor.Actions.IHaveName.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Calabonga.EntityProcessor.Actions
+  commentId: N:Calabonga.EntityProcessor.Actions
+  name: Calabonga.EntityProcessor.Actions
+  nameWithType: Calabonga.EntityProcessor.Actions
+  fullName: Calabonga.EntityProcessor.Actions
+- uid: Calabonga.EntityProcessor.Actions.IHaveName.Name*
+  commentId: Overload:Calabonga.EntityProcessor.Actions.IHaveName.Name
+  name: Name
+  nameWithType: IHaveName.Name
+  fullName: Calabonga.EntityProcessor.Actions.IHaveName.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

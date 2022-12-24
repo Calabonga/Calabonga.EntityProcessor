@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Events.IDomainEvent
+  commentId: T:Calabonga.EntityProcessor.Events.IDomainEvent
+  id: IDomainEvent
+  parent: Calabonga.EntityProcessor.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IDomainEvent
+  nameWithType: IDomainEvent
+  fullName: Calabonga.EntityProcessor.Events.IDomainEvent
+  type: Interface
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Events/IDomainEvent.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: IDomainEvent
+    path: ../../src/Calabonga.EntityProcessor/Events/IDomainEvent.cs
+    startLine: 2
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Events
+  syntax:
+    content: public interface IDomainEvent
+    content.vb: Public Interface IDomainEvent
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Calabonga.EntityProcessor.Events
+  commentId: N:Calabonga.EntityProcessor.Events
+  name: Calabonga.EntityProcessor.Events
+  nameWithType: Calabonga.EntityProcessor.Events
+  fullName: Calabonga.EntityProcessor.Events

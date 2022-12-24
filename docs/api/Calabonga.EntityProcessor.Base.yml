@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Base
+  commentId: N:Calabonga.EntityProcessor.Base
+  id: Calabonga.EntityProcessor.Base
+  children:
+  - Calabonga.EntityProcessor.Base.RuleResultBase
+  langs:
+  - csharp
+  - vb
+  name: Calabonga.EntityProcessor.Base
+  nameWithType: Calabonga.EntityProcessor.Base
+  fullName: Calabonga.EntityProcessor.Base
+  type: Namespace
+  assemblies:
+  - Calabonga.EntityProcessor
+references:
+- uid: Calabonga.EntityProcessor.Base.RuleResultBase
+  commentId: T:Calabonga.EntityProcessor.Base.RuleResultBase
+  parent: Calabonga.EntityProcessor.Base
+  name: RuleResultBase
+  nameWithType: RuleResultBase
+  fullName: Calabonga.EntityProcessor.Base.RuleResultBase
+- uid: Calabonga.EntityProcessor.Base
+  commentId: N:Calabonga.EntityProcessor.Base
+  name: Calabonga.EntityProcessor.Base
+  nameWithType: Calabonga.EntityProcessor.Base
+  fullName: Calabonga.EntityProcessor.Base

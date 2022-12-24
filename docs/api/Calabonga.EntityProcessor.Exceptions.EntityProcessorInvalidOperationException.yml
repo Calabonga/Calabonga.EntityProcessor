@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException
+  commentId: T:Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException
+  id: EntityProcessorInvalidOperationException
+  parent: Calabonga.EntityProcessor.Exceptions
+  children:
+  - Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EntityProcessorInvalidOperationException
+  nameWithType: EntityProcessorInvalidOperationException
+  fullName: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException
+  type: Class
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Exceptions/EntityProcessorInvalidOperationException.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: EntityProcessorInvalidOperationException
+    path: ../../src/Calabonga.EntityProcessor/Exceptions/EntityProcessorInvalidOperationException.cs
+    startLine: 2
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Exceptions
+  syntax:
+    content: 'public class EntityProcessorInvalidOperationException : Exception'
+    content.vb: >-
+      Public Class EntityProcessorInvalidOperationException
+          Inherits Exception
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor(System.String)
+  commentId: M:Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException
+  langs:
+  - csharp
+  - vb
+  name: EntityProcessorInvalidOperationException(String)
+  nameWithType: EntityProcessorInvalidOperationException.EntityProcessorInvalidOperationException(String)
+  fullName: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.EntityProcessorInvalidOperationException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Calabonga.EntityProcessor/Exceptions/EntityProcessorInvalidOperationException.cs
+      branch: main
+      repo: git@github.com:Calabonga/Calabonga.EntityProcessor.git
+    id: .ctor
+    path: ../../src/Calabonga.EntityProcessor/Exceptions/EntityProcessorInvalidOperationException.cs
+    startLine: 4
+  assemblies:
+  - Calabonga.EntityProcessor
+  namespace: Calabonga.EntityProcessor.Exceptions
+  syntax:
+    content: public EntityProcessorInvalidOperationException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Calabonga.EntityProcessor.Exceptions
+  commentId: N:Calabonga.EntityProcessor.Exceptions
+  name: Calabonga.EntityProcessor.Exceptions
+  nameWithType: Calabonga.EntityProcessor.Exceptions
+  fullName: Calabonga.EntityProcessor.Exceptions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor*
+  commentId: Overload:Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.#ctor
+  name: EntityProcessorInvalidOperationException
+  nameWithType: EntityProcessorInvalidOperationException.EntityProcessorInvalidOperationException
+  fullName: Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.EntityProcessorInvalidOperationException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
