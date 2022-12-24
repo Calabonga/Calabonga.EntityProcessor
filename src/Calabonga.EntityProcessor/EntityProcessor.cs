@@ -9,21 +9,22 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Calabonga.EntityProcessor;
 
-public abstract class EntityProcessorBase<TEntity> where TEntity : class
+public abstract class EntityProcessor<TEntity>: IEntityProcessor
+    where TEntity : class 
 {
     private readonly EntityProcessorContext _context = new();
-    private readonly EntityProcessorConfiguration _configuration;
+    private readonly EntityProcessorConfiguration<TEntity>? _configuration;
     private readonly IMediator _mediator;
     private readonly ILogger _logger;
     private readonly IEnumerable<IRule<TEntity>> _rules;
 
-    protected EntityProcessorBase(
+    protected EntityProcessor(
         IMediator mediator,
-        EntityProcessorConfiguration? configuration,
+        EntityProcessorConfiguration<TEntity>? configuration,
         ILogger logger,
         IEnumerable<IRule<TEntity>> rules)
     {
-        _configuration = configuration ?? new EntityProcessorConfiguration();
+        _configuration = configuration;
         _mediator = mediator;
         _logger = logger;
         _rules = rules;
@@ -36,7 +37,7 @@ public abstract class EntityProcessorBase<TEntity> where TEntity : class
         List<ValidationResult> errors = new();
         var allRules = _rules.Union(rules ?? Enumerable.Empty<IRule<TEntity>>()).ToList();
 
-        if (!_configuration.SkipRuleDuplicates)
+        if (_configuration?.SkipRuleDuplicates == false)
         {
             var grouped = allRules.GroupBy(x => x.GetType().Name).Select(x => new { Name = x.Key, Total = x.Count() });
             if (grouped.Any(x => x.Total > 1))
@@ -75,7 +76,7 @@ public abstract class EntityProcessorBase<TEntity> where TEntity : class
 
         var result = await actionToExecute.ApplyAsync(entity, _context, cancellationToken);
 
-        if (_configuration.AutoFireDomainEvents)
+        if (_configuration?.AutoFireDomainEvents == true)
         {
             _logger.LogDebug("[{EntityProcessor}]: Firing DomainEvents", GetType().Name);
             await FireDomainEventsAsync(result.DomainEvents, cancellationToken);
@@ -103,4 +104,9 @@ public abstract class EntityProcessorBase<TEntity> where TEntity : class
         }
     }
 
+}
+
+public interface IEntityProcessor
+{
+    
 }

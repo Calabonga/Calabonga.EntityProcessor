@@ -4,17 +4,13 @@ namespace Calabonga.EntityProcessor.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static void AddEntityProcessor<TProcessor>(this IServiceCollection services, Action<EntityProcessorConfiguration> configure)
+    public static void AddEntityProcessor<TProcessor, TConfiguration>(this IServiceCollection services, Action<TConfiguration> configuration)
+        where TProcessor : IEntityProcessor
+        where TConfiguration : IEntityProcessorConfiguration
     {
         services.AddScoped(typeof(TProcessor));
-        var configuration = new EntityProcessorConfiguration();
-        configure(configuration);
-        services.AddSingleton(configuration);
-    }
-
-    public static void AddEntityProcessor<TProcessor>(this IServiceCollection services, EntityProcessorConfiguration? configuration)
-    {
-        services.AddScoped(typeof(TProcessor));
-        services.AddSingleton(configuration ??= new EntityProcessorConfiguration());
+        var entityProcessorConfiguration = Activator.CreateInstance<TConfiguration>();
+        configuration(entityProcessorConfiguration);
+        services.AddSingleton(typeof(TConfiguration), entityProcessorConfiguration);
     }
 }
