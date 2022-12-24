@@ -16,7 +16,7 @@ public class OrderEntityProcessor : EntityProcessor<Order>
     public OrderEntityProcessor(
         IEnumerable<IAction<Order>> actions,
         IMediator mediator,
-        OrderEntityProcessorConfiguration? configuration,
+        OrderEntityProcessorConfiguration configuration,
         ILogger<OrderEntityProcessor> logger,
         IEnumerable<IRule<Order>> rules) : base(mediator,
         configuration,

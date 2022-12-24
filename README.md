@@ -1,16 +1,27 @@
-# EntityProcessor
-## Why
-
-Entity processing with domain event collection. Rules, Actions, Validators, some helpers and other things for Domain-Driven Design pattern implementation.
-
-## Что это?
+## Что такое EntityProcessor?
 
 Нет ничего проще, чем создать хорошую архитектуру для проекта. Вот только понятие "хорошая" не всегда совпадает с общепринятыми стандартами, паттернами и прочими правилами разработки. Обычно работает одно правило: "сойдет и так". Чем писать много букв, предлагаю посмотреть на видео, на котором я постарался по полочкам разложить необходимость использования подобного решения. И, конечно же, обосновав это как только мог, ссылаясь на свои опыт и практику.
 
-## Описание
+## Версии
 
-[готовиться]
+### v1.1.0 2022-12-24
+- добавлена возможно создания конфигураций для каждого из EntityProcessor. То есть поддерживается множественные конфигации
+- исправлены опечатки и синтаксические ошибки
 
-## Nuget
+### v1.0.0 2022-12-12
+- Вышла первая версия показанная на видео
+- Создан nuget-пакет
 
-[https://github.com/Calabonga/Calabonga.EntityProcessor](https://github.com/Calabonga/Calabonga.EntityProcessor)
+
+
+## Дополнительно
+
+* [Статья в блоге](https://www.calabonga.net/blog/post/entity-processor)
+
+* [Видео на YouTube](https://youtu.be/q_6qz4z37LU)
+
+* [Nuget-пакет](https://github.com/Calabonga/Calabonga.EntityProcessor)
+
+## Description
+
+Entity processing with domain event collection. Rules, Actions, Validators, some helpers and other things for Domain-Driven Design pattern implementation.
