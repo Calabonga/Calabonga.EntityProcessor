@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.ActionBase-1.html",
-          "hash": "MA0CJV+okXXnR0gK1+41ZxKA7bZuwdKzd+xaKtqtScM="
+          "hash": "RXvTLyUe8ldPc2t1vSsrsZwl4sYccyD/CPq3nGibULE="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.EntityActionResult.html",
-          "hash": "aS1W/w5dGwEy6ODcUSYJ8grqLdtSUuNnqPtemqMk1V4="
+          "hash": "LOR+NBbqH1eKwfN/n+SMORWofpylpAPcGxyYcT9dNO0="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.IAction-1.html",
-          "hash": "d8jX2dnV1TMbA+QQyP9+pIH27Ou27Xyx69MLXLY3jFY="
+          "hash": "LhM0e1he6m1RrikbAYEm1SLyL8kEw7a/Y/MI/oRvE5E="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.IHaveDomainEvents.html",
-          "hash": "5eE90eX2BXEV/tFt8Lq19+6b1pLVsYMwtrvfYD9k1XU="
+          "hash": "91K0h0yvlcTHTsGahRVANYphtJt6fpI7cPA6Yo/q5QA="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.IHaveName.html",
-          "hash": "YT24pfJWdCm+v5P+H7jIuDtsBFKh2Mai+F5eLSC4r2o="
+          "hash": "lV01V7i0wemlYW6mpXBY4oocWKA1zlueqMCDqQalsGs="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Actions.html",
-          "hash": "A9dE8oECqYlOShvBX00TwB3aoP1sRuyOV66JZFbQYM0="
+          "hash": "nUp7IiKJ2domKGFTcLTz0KC1LdeaDdWeK7EhUWKi49s="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.DomainEventCollectionBase.html",
-          "hash": "7oXhSq3Xa17RFajCoxNqQMNrKHJ/GChZ7325DcQflzU="
+          "hash": "CICvCq5Q7j4zabXbOqC+QSgi6WTv/9SryyTionpqOxc="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.EntityProcessor-1.html",
-          "hash": "jqXYH6xnNhsB5mlscgvgRBBuChLM9a045tvQY9KEKzw="
+          "hash": "g4MiaIhgm3MyIi9wGTfgR76F7hwJpotgIZLwEBNO3Bk="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.EntityProcessorConfiguration-1.html",
-          "hash": "STqFDELvSQqH8uVC5GOdLTvt65cFSZ98SpTu7eOcOZ8="
+          "hash": "0F1oOcUGC5HVLWPDoZ3lPdlK7K+iXMLyanqGFkW1cRk="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.EntityProcessorContext.html",
-          "hash": "Hgu0Puy5vW4BG7G7aq6hqsUAhY3f3Sv0ZjGF0vODZTI="
+          "hash": "H8kW8q+0WuwvUXxyzd11FmKFag+41h1A9FUNIx8GdHs="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Events.IDomainCommand.html",
-          "hash": "ynCIyZUOR8Th9R67QlReJhIETBZ5OBrQee6NkN6C/e8="
+          "hash": "oe1Xl3YKijv7csC2VivA3sxEo2Asq9u2QDQSSxGtI9U="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Events.IDomainEvent.html",
-          "hash": "FhSQZM5VSmRMJhtxk0VLuxRC0vC/ZuRSKd6ZFaq+Lvw="
+          "hash": "gfVkg2J92vBADyXMWlopJDflTVM4cFnLG+7kZNiFsiQ="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Events.IDomainNotification.html",
-          "hash": "Ko9Xv05OwTKjgIB82TShcADs4KXZ2qa/G/jw3X3GFVI="
+          "hash": "ynyFR0VyqHqAkILErOEPBN7rB7AmvvrYuakVzt68G10="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Events.html",
-          "hash": "jRvluk6rTZJpCSoBcTKjnz3ELcPqlMRkCwGLkJI0sXw="
+          "hash": "WcYR2kWwCkDcMgnj6mdPBAiCpktjPne8X95+uXo9H0w="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Exceptions.EntityProcessorInvalidOperationException.html",
-          "hash": "ZwA7Tcn+nk0rr1yHdBZcXcoHJDPUl/rr382nRQHJfOA="
+          "hash": "Uzd6fMAPcCReFni2lXZcJ+ZsFi7y16c3ZvySeEgg4dA="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Exceptions.html",
-          "hash": "Kcjhdgtcc+v5pJUg8H2btN5Ot4OQpwkKfgsJA0hg8FI="
+          "hash": "TEoXn+DW2LoEFmo9EICo7qhTc5L9bdcJRmCis2qgcVI="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Extensions.ServiceCollectionExtensions.html",
-          "hash": "JPcQBwLZv6vut46H+V5uJOBizhIlIGJ6Ug7curBdXLA="
+          "hash": "sM/LK2fXDeLjALUrN69mGVE7gbeZvWipoRwoAV6+BMY="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Extensions.html",
-          "hash": "slH9LZiAhA7tmSoCX0//Xclbyqv8sXT1aqdEZfn7g4s="
+          "hash": "crg2Oes2PjGSj5c8O6VcU+53/P2Z7wkrsy5euGwxiKY="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.IEntityProcessor.html",
-          "hash": "89CyGrceUENckK4EkwGy1W4x1HV0YqgSPFd7iKhhGiY="
+          "hash": "L5VtTS/TJhG7c9bEMPc9GMoUjKGAxX9lckJaxjnVe7g="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.IEntityProcessorConfiguration.html",
-          "hash": "8AEQ2gSnVmXpy8ftyH5wkMAKnQ+ujNxNFQ+oJn/clW4="
+          "hash": "rS1J7+13U67C0zJ6mvd4JI6wbbpq4Cc+Xz9OEvmsy8I="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.ErrorRuleResult.html",
-          "hash": "2FjN28KAm8I4elrQnzX4QqE+QmI974HttBQhuHYUbP4="
+          "hash": "szEdmRRhwQkDHx2KFSUdcJ/tq0WTUxkX+Gpyb6SYpNY="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.ExecutionErrorResult-1.html",
-          "hash": "Nro7oTClGNMvEX5YjNxERej62IWX9NzRQCnJU2AYPzk="
+          "hash": "M1M7K+uZ6WAE2PMvjPsBFVKy+NLgSdbmvRUzGs1A8n0="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.ExecutionResultBase-1.html",
-          "hash": "r0iJbMd27ixD75cKdu71qspz7K/4sT3KXBdZbRHPs5U="
+          "hash": "UBQsON8tncuWaLUZjDlftFSdqye2pgLqo4ufJMtXDKA="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.ExecutionSuccessResult-1.html",
-          "hash": "EPOehcdLsU5797XPM2RxMnh00JXH+l39RZD44/8yoT8="
+          "hash": "yD0yN8R82hDsi6FyfwM4HV2KqnjMZ6RtEddxX7F4NXs="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.ResultBase.html",
-          "hash": "LSHKgn4H9MtFskAUrIjO5pGFgF1pMRI7wB3+PYByV0s="
+          "hash": "78z0Z4n7NJA0iGCS3eVn3ZLxDQVPFkaeLryvVrywJUk="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Results.html",
-          "hash": "e4ms2NkNEl4qkILiAzRuTTDWzZWV5trstLAOtdt3hVM="
+          "hash": "a0jLSVZZSfLRQICCtiqyTSw/LH7tr3TShuAkZKrg7EU="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.IRule-1.html",
-          "hash": "XsbA1xr3vBbzNpWDnVjDVIkcdYfs9LMFQmQBM1JkqLU="
+          "hash": "qq92K3Mn1tdevHuTajac52au0GmyFj04dyvyO2cPaqY="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.IRuleResult.html",
-          "hash": "ZXE+Ds1vydy81WUNte1ImzDSTDBZb34uEB2+/ozD8Ig="
+          "hash": "u/NRwCICoA4Emd9IsshJpKf1db9DYwi/S00eviYJnZg="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.RuleBase-1.html",
-          "hash": "tejdu1pUBVLwxmjbUEWS2JkQ7nZKDVqO58MH1zT9G1U="
+          "hash": "AuiL5g33XKwQ/e37X6OcHTiRJEj3mZow/hxr3aorZyQ="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.RuleResultBase.html",
-          "hash": "0w7GtA0FAL/GJRjGtcGe5//hEROHDlD8tw9vqwgSsxY="
+          "hash": "XUNpVlXRo6YGf1ob9Mzs/nnAEonHIOZl778JT6CaVhA="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.SuccessRuleResult.html",
-          "hash": "GtuU2eeAGJfKI93BDC/QCinR9twsvsxYn6wnLjFpw54="
+          "hash": "MLCE67eWGQlqYRARFhugLMMuaiQROrNqXrDk3VybWBI="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.Rules.html",
-          "hash": "wyLdtsUT1xnB39lmIF3V6+YuwK8Cha5mItIxwSuN6cU="
+          "hash": "vtQ9hj788lzqKwxJBonLYCcFKSI1Lpj6CTWiwhASgAk="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Calabonga.EntityProcessor.html",
-          "hash": "kdxfH2ORypBlWCxG9b9iC7z0mCYv2Zdo2HiUFrJPoww="
+          "hash": "whrRO1Yb3eJqkSgAJmRgF58RpyyeM9K4v3iRrXlyhG8="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "sTREqsGXLRnN25MKa67PNipSJn5QBUVQRVsYvtKNoyk="
+          "hash": "USobhC4cyF65cAZND9Eq5oDNgJqSoe18SUp6eMadZYQ="
         }
       },
       "is_incremental": false,
@@ -424,24 +424,11 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
       "output": {
-        ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "sSviLp4REEzuamYoecJmO1qv7ntdCvU0181cF1LeSRc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        "resource": {
+          "relative_path": "images/favicon.ico"
         }
       },
       "is_incremental": false,
@@ -453,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "YL/ddh4emgZKNRo9xSXQlYF2Xi2/iFOjuHspxHinxRc="
+          "hash": "8y6A5h1KZxSMkSsM7b4Rt24MO43Uwon/5d8nF8wmvMs="
         }
       },
       "is_incremental": false,
@@ -465,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+          "hash": "W1ndPa5uPRTyr43HnA3JJTEhebnQyf4F4Rkv1cA6V+o="
         }
       },
       "is_incremental": false,
@@ -475,23 +462,32 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 2
+          "total_file_count": 2,
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 33,
-          "skipped_file_count": 33
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -504,8 +500,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
