@@ -5,7 +5,7 @@
 
 ## Дополнительно
 
-* [Документация API](https://calabonga.github.io/Calabonga.EntityProcessor/)
+* [Документация API](https://calabonga.github.io/Calabonga.EntityProcessor/api/)
 
 * [Статья в блоге](https://www.calabonga.net/blog/post/entity-processor)
 
