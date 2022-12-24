@@ -5,6 +5,7 @@
 /// и уведомления <see cref="IDomainNotification"/>.
 /// </summary>
 /// <remarks>
-/// Команды <see cref="IDomainCommand"/> имеет одного исполнителя. Уведомления <see cref="IDomainNotification"/> получат все подписчики. 
+/// Команды <see cref="IDomainCommand"/> имеет одного исполнителя.
+/// Уведомления <see cref="IDomainNotification"/> получат все подписчики. 
 /// </remarks>
 public interface IDomainEvent { }

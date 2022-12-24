@@ -4,6 +4,9 @@ using MediatR;
 
 namespace Calabonga.EntityProcessor;
 
+/// <summary>
+/// Интерфейс конфигурации для <see cref="EntityProcessor{TEntity}"/>
+/// </summary>
 public interface IEntityProcessorConfiguration
 {
     /// <summary>

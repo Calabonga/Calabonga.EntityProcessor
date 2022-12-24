@@ -26,7 +26,7 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
     /// Создает экземпляр процессора
     /// </summary>
     /// <param name="mediator">https://github.com/jbogard/MediatR</param>
-    /// <param name="configuration"><see cref="EntityProcessorConfiguration"/></param>
+    /// <param name="configuration"><see cref="EntityProcessorConfiguration{TEntity}"/></param>
     /// <param name="logger"></param>
     /// <param name="rules"></param>
     protected EntityProcessor(
@@ -41,6 +41,15 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
         _rules = rules;
     }
 
+    /// <summary>
+    /// Запускает процесс, в котором происходит проверка правил <see cref="IRule{TEntity}"/> и применение действия <see cref="IAction{TEntity}"/>
+    /// </summary>
+    /// <param name="entity">сущность, над которой производится действие</param>
+    /// <param name="actionToExecute">действие, которое будет выполнено если в результате проверки правил не было обнаружено ошибок</param>
+    /// <param name="rules">дополнительный список правил, которые надо проверить перед применением действия</param>
+    /// <param name="cancellationToken">ключ отмены асинхронной операции</param>
+    /// <returns></returns>
+    /// <exception cref="EntityProcessorInvalidOperationException">ошибка в процессе выполнения</exception>
     public async Task<ExecutionResultBase<TEntity>> ProcessAsync(TEntity entity, IAction<TEntity> actionToExecute, IEnumerable<IRule<TEntity>>? rules = null, CancellationToken cancellationToken = default)
     {
         _logger.LogDebug("[{EntityProcessor}]: Executing {Method}", GetType().Name, nameof(ProcessAsync));
@@ -107,6 +116,7 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
                     _logger.LogDebug("[Command fired]: {Name}", domainEvent.GetType().Name);
                     await _mediator.Send(domainEvent, cancellationToken);
                     break;
+
                 case IDomainNotification:
                     _logger.LogDebug("[Notification fired]: {Name}", domainEvent.GetType().Name);
                     await _mediator.Publish(domainEvent, cancellationToken);
@@ -114,10 +124,5 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
             }
         }
     }
-
-}
-
-public interface IEntityProcessor
-{
 
 }

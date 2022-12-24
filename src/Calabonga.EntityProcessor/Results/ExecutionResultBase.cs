@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Calabonga.EntityProcessor.Results;
 
-
 /// <summary>
 /// Базовый класс. Результат исполнения команды в процессоре
 /// </summary>

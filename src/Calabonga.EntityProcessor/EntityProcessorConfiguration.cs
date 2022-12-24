@@ -7,7 +7,7 @@ namespace Calabonga.EntityProcessor;
 /// <summary>
 /// Общая конфигурация для всех процессоров, зарегистрированных в системе
 /// </summary>
-public class EntityProcessorConfiguration<TEntity> : IEntityProcessorConfiguration
+public abstract class EntityProcessorConfiguration<TEntity> : IEntityProcessorConfiguration
 {
     /// <summary>
     /// Если включено, то обрабатывается каждое и дублирующих правил. Сообщение об ошибке не выдается.  
