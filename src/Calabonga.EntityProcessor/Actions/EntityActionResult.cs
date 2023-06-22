@@ -7,4 +7,5 @@ namespace Calabonga.EntityProcessor.Actions;
 /// </summary>
 public class EntityActionResult : ResultBase
 {
+    public T Entity { get; set; }
 }

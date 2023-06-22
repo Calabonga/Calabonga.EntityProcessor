@@ -15,7 +15,7 @@ public interface IAction<in TEntity> : IRequest, IHaveName where TEntity : class
     /// <param name="context"></param>
     /// <param name="cancellationToken"></param>
     /// <returns>результат обработки сущности</returns>
-    Task<EntityActionResult> ApplyAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
+    Task<EntityActionResult> ApplyAsync(TEntity? entity, EntityProcessorContext context, CancellationToken cancellationToken);
 
     /// <summary>
     /// Должно ли действие быть перехвачено
