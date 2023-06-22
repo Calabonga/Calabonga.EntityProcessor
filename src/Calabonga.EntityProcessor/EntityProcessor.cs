@@ -20,7 +20,7 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
     private readonly EntityProcessorConfiguration<TEntity>? _configuration;
     private readonly IMediator _mediator;
     private readonly ILogger _logger;
-    private readonly IEnumerable<IRule<TEntity>> _rules;
+    private readonly IEnumerable<IRule<TEntity?>> _rules;
 
     /// <summary>
     /// Создает экземпляр процессора
@@ -33,7 +33,7 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
         IMediator mediator,
         EntityProcessorConfiguration<TEntity>? configuration,
         ILogger logger,
-        IEnumerable<IRule<TEntity>> rules)
+        IEnumerable<IRule<TEntity?>> rules)
     {
         _configuration = configuration;
         _mediator = mediator;
@@ -50,56 +50,58 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
     /// <param name="cancellationToken">ключ отмены асинхронной операции</param>
     /// <returns></returns>
     /// <exception cref="EntityProcessorInvalidOperationException">ошибка в процессе выполнения</exception>
-    public async Task<ExecutionResultBase<TEntity>> ProcessAsync(TEntity? entity, IAction<TEntity> actionToExecute, IEnumerable<IRule<TEntity>>? rules = null, CancellationToken cancellationToken = default)
+    public async Task<ExecutionResultBase<TEntity>> ProcessAsync(
+        TEntity? entity,
+        IAction<TEntity> actionToExecute,
+        IEnumerable<IRule<TEntity>>? rules = null,
+        CancellationToken cancellationToken = default)
     {
         _logger.LogDebug("[{EntityProcessor}]: Executing {Method}", GetType().Name, nameof(ProcessAsync));
 
-        if (entity is not null)
+
+
+        List<ValidationResult> errors = new();
+        List<IRule<TEntity?>> allRules = _rules.Union(rules ?? Enumerable.Empty<IRule<TEntity>>()).ToList();
+
+        if (_configuration?.SkipRuleDuplicates == false)
         {
-
-            List<ValidationResult> errors = new();
-            var allRules = _rules.Union(rules ?? Enumerable.Empty<IRule<TEntity>>()).ToList();
-
-            if (_configuration?.SkipRuleDuplicates == false)
+            var grouped = allRules.GroupBy(x => x.GetType().Name).Select(x => new { Name = x.Key, Total = x.Count() });
+            if (grouped.Any(x => x.Total > 1))
             {
-                var grouped = allRules.GroupBy(x => x.GetType().Name).Select(x => new { Name = x.Key, Total = x.Count() });
-                if (grouped.Any(x => x.Total > 1))
-                {
-                    _logger.LogWarning("[{EntityProcessor}]: Attention! Some rules are duplicated", GetType().Name);
-                    throw new EntityProcessorInvalidOperationException("Duplicated are found, but not allowed");
-                }
+                _logger.LogWarning("[{EntityProcessor}]: Attention! Some rules are duplicated", GetType().Name);
+                throw new EntityProcessorInvalidOperationException("Duplicated are found, but not allowed");
             }
-
-            var isRulesRequired = allRules.Any();
-            var isValid = !isRulesRequired;
-
-            if (isRulesRequired)
-            {
-                _logger.LogDebug("[{EntityProcessor}]: found {Total} rules", GetType().Name, allRules.Count);
-                foreach (var rule in allRules!)
-                {
-                    _logger.LogDebug("[{EntityProcessor}]: Validating {Entity} with rule {RuleName}", GetType().Name, entity.GetType().Name, rule.GetType().Name);
-                    var check = await rule.ValidateAsync(entity, _context, cancellationToken);
-                    if (check.Ok)
-                    {
-                        continue;
-                    }
-
-                    errors.Add(new ValidationResult(check.ErrorMessage));
-                }
-
-                isValid = !errors.Any();
-            }
-
-            if (isRulesRequired && !isValid)
-            {
-                _logger.LogDebug("[{EntityProcessor}]: Executed {Method}", GetType().Name, nameof(ProcessAsync));
-                return new ExecutionErrorResult<TEntity>(entity, errors);
-            }
-
         }
 
-        var result = await actionToExecute.ApplyAsync(entity, _context, cancellationToken);
+        var isRulesRequired = allRules.Any();
+        var isValid = !isRulesRequired;
+
+        if (isRulesRequired)
+        {
+            _logger.LogDebug("[{EntityProcessor}]: found {Total} rules", GetType().Name, allRules.Count);
+            foreach (var rule in allRules!)
+            {
+                _logger.LogDebug("[{EntityProcessor}]: Validating {Entity} with rule {RuleName}", GetType().Name, entity.GetType().Name, rule.GetType().Name);
+                var check = await rule.ValidateAsync(entity, _context, cancellationToken);
+                if (check.Ok)
+                {
+                    continue;
+                }
+
+                errors.Add(new ValidationResult(check.ErrorMessage));
+            }
+
+            isValid = !errors.Any();
+        }
+
+        if (isRulesRequired && !isValid)
+        {
+            _logger.LogDebug("[{EntityProcessor}]: Executed {Method}", GetType().Name, nameof(ProcessAsync));
+            return new ExecutionErrorResult<TEntity>(entity, errors);
+        }
+
+        actionToExecute.SetContext(_context);
+        var result = await actionToExecute.ApplyAsync(entity, cancellationToken);
 
         if (_configuration?.AutoFireDomainEvents == true)
         {
@@ -110,6 +112,8 @@ public abstract class EntityProcessor<TEntity> : IEntityProcessor
         _logger.LogDebug("[{EntityProcessor}]: Executed {Method}", GetType().Name, nameof(ProcessAsync));
         return new ExecutionSuccessResult<TEntity>(result.Entity, result);
     }
+
+    protected EntityProcessorContext Context => _context;
 
     private async Task FireDomainEventsAsync(IEnumerable<IDomainEvent> domainEvents, CancellationToken cancellationToken)
     {

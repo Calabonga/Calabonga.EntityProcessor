@@ -15,7 +15,7 @@ public abstract class RuleBase<TEntity> : IRule<TEntity> where TEntity : class
     /// <param name="context">контекст для передачи дополнительных данных</param>
     /// <param name="cancellationToken">маркет отмены</param>
     /// <returns></returns>
-    public abstract Task<IRuleResult> ValidateAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
+    public abstract Task<IRuleResult> ValidateAsync(TEntity? entity, EntityProcessorContext context, CancellationToken cancellationToken);
 
     /// <summary>
     /// Сообщение, которое будет выдано на случай неудачи в процессе проверке
