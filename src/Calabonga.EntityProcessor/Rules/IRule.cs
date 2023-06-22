@@ -15,7 +15,7 @@ public interface IRule<in TEntity> : IHaveName where TEntity : class
     /// <param name="context">контекст для передачи дополнительных данных</param>
     /// <param name="cancellationToken">маркет отмены</param>
     /// <returns></returns>
-    Task<IRuleResult> ValidateAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
+    Task<IRuleResult> ValidateAsync(TEntity? entity, EntityProcessorContext context, CancellationToken cancellationToken);
 
     /// <summary>
     /// Сообщение, которое будет выдано на случай неудачи в процессе проверке

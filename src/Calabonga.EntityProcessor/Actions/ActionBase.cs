@@ -7,13 +7,12 @@
 public abstract class ActionBase<TEntity> : IAction<TEntity> where TEntity : class
 {
     /// <summary>
-    /// Возвращает результат применения действия <see cref="EntityActionResult"/> для сущности. Реализация этого метода
+    /// Возвращает результат применения действия <see cref="EntityActionResult{TEntity}"/> для сущности. Реализация этого метода
     /// </summary>
     /// <param name="entity"></param>
-    /// <param name="context"></param>
     /// <param name="cancellationToken"></param>
     /// <returns>результат обработки сущности</returns>
-    public abstract Task<EntityActionResult> ApplyAsync(TEntity entity, EntityProcessorContext context, CancellationToken cancellationToken);
+    public abstract Task<EntityActionResult<TEntity>> ApplyAsync(TEntity? entity, CancellationToken cancellationToken);
 
     /// <summary>
     /// Должно ли действие быть перехвачено
@@ -22,6 +21,10 @@ public abstract class ActionBase<TEntity> : IAction<TEntity> where TEntity : cla
     /// По умолчанию не перехватываем никакие действия</remarks>
     public virtual bool IsShouldBeHandled { get; } = false;
 
+    public EntityProcessorContext Context { get; protected set; }
+
     /// <inheritdoc />
     public virtual string? Name { get; } = null;
+
+    public void SetContext(EntityProcessorContext context) => Context = context;
 }

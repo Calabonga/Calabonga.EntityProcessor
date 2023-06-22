@@ -8,7 +8,7 @@ namespace Calabonga.EntityProcessor.Results;
 /// <typeparam name="TEntity"></typeparam>
 public class ExecutionSuccessResult<TEntity> : ExecutionResultBase<TEntity>
 {
-    public ExecutionSuccessResult(TEntity entity, EntityActionResult result) : base(entity, result)
+    public ExecutionSuccessResult(TEntity entity, EntityActionResult<TEntity> result) : base(entity, result)
     {
     }
 }

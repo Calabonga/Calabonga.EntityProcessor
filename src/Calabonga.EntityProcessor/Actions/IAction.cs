@@ -6,19 +6,22 @@ namespace Calabonga.EntityProcessor.Actions;
 /// Базовый класс реализующий действия над сущностью. Действия могут быть получены из контейнера, так и созданы явно в месте запуска.
 /// </summary>
 /// <typeparam name="TEntity"></typeparam>
-public interface IAction<in TEntity> : IRequest, IHaveName where TEntity : class
+public interface IAction<TEntity> : IRequest, IHaveName where TEntity : class
 {
     /// <summary>
-    /// Возвращает результат применения действия <see cref="EntityActionResult"/> для сущности. Реализация этого метода
+    /// Возвращает результат применения действия <see cref="EntityActionResult{TEntity}"/> для сущности. Реализация этого метода
     /// </summary>
     /// <param name="entity"></param>
-    /// <param name="context"></param>
     /// <param name="cancellationToken"></param>
     /// <returns>результат обработки сущности</returns>
-    Task<EntityActionResult> ApplyAsync(TEntity? entity, EntityProcessorContext context, CancellationToken cancellationToken);
+    Task<EntityActionResult<TEntity>> ApplyAsync(TEntity? entity, CancellationToken cancellationToken);
 
     /// <summary>
     /// Должно ли действие быть перехвачено
     /// </summary>
     bool IsShouldBeHandled { get; }
+
+    EntityProcessorContext Context { get; }
+
+    void SetContext(EntityProcessorContext context);
 }

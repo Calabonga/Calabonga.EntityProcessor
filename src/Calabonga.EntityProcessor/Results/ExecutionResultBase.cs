@@ -10,7 +10,7 @@ namespace Calabonga.EntityProcessor.Results;
 /// <typeparam name="TEntity">сущность для которой выполняется действие</typeparam>
 public abstract class ExecutionResultBase<TEntity>
 {
-    protected ExecutionResultBase(TEntity? entity, EntityActionResult? result)
+    protected ExecutionResultBase(TEntity? entity, EntityActionResult<TEntity> result)
     {
         Entity = entity;
         Result = result;
@@ -19,7 +19,7 @@ public abstract class ExecutionResultBase<TEntity>
     /// <summary>
     /// Результат выполнения действия <see cref="IAction{TEntity}"/>
     /// </summary>
-    public EntityActionResult? Result { get; }
+    public EntityActionResult<TEntity>? Result { get; }
 
     /// <summary>
     /// Ошибки, возникшие в процессе выполнения валидации.
